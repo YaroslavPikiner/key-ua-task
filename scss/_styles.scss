@@ -81,16 +81,48 @@ body {
     height: 279px;
     width: 1050px;
     margin: 0 140px;
+    position: relative;
+    color: $white;
+    z-index: 1;
     .input__warranty {
       display: flex;
       flex-direction: row;
-      .warranty__wrapper {
+      align-items: center;
+      .warranty__wrapper--orange {
         background: $orange;
+        padding: 20px 30px 20px 40px;
       }
-
+      .warranty__wrapper--violet {
+        background: url("../img/Fill1.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+      }
       .warranty {
-        clip-path: polygon(100% 30%, 100% 50%, 100% 75%, 30% 75%, 0% 50%, 30% 30%);
-        background-color: $violet;
+        font-size: 30px;
+        line-height: 57px;
+      }
+      .warranty__price {
+        background: url("../img/Group\ 3.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px;
+        .price {
+          font-size: var(--text-head-size);
+          font-size: 30px;
+          line-height: 28px;
+        }
+        .text {
+          font-size: var(--text-base-size);
+        }
       }
     }
     .input__data {

@@ -409,15 +409,44 @@ body {
   .offer__input {
     height: 279px;
     width: 1050px;
-    margin: 0 140px; }
+    margin: 0 140px;
+    position: relative;
+    color: #ffffff;
+    z-index: 1; }
     .offer__input .input__warranty {
       display: flex;
-      flex-direction: row; }
-      .offer__input .input__warranty .warranty__wrapper {
-        background: linear-gradient(317.76deg, #FFA600 40.02%, #FF7800 68.68%, #FF6D00 83.15%); }
+      flex-direction: row;
+      align-items: center; }
+      .offer__input .input__warranty .warranty__wrapper--orange {
+        background: linear-gradient(317.76deg, #FFA600 40.02%, #FF7800 68.68%, #FF6D00 83.15%);
+        padding: 20px 30px 20px 40px; }
+      .offer__input .input__warranty .warranty__wrapper--violet {
+        background: url("../img/Fill1.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        display: flex;
+        justify-content: start;
+        align-items: center; }
       .offer__input .input__warranty .warranty {
-        clip-path: polygon(100% 30%, 100% 50%, 100% 75%, 30% 75%, 0% 50%, 30% 30%);
-        background-color: #6e61f5; }
+        font-size: 30px;
+        line-height: 57px; }
+      .offer__input .input__warranty .warranty__price {
+        background: url("../img/Group 3.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 30px; }
+        .offer__input .input__warranty .warranty__price .price {
+          font-size: var(--text-head-size);
+          font-size: 30px;
+          line-height: 28px; }
+        .offer__input .input__warranty .warranty__price .text {
+          font-size: var(--text-base-size); }
     .offer__input .input__data {
       background: linear-gradient(317.76deg, #FFA600 40.02%, #FF7800 68.68%, #FF6D00 83.15%); }
 
