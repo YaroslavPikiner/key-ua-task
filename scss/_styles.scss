@@ -768,30 +768,97 @@ body {
     color: $darkGray;
     margin-bottom: 35px;
   }
+
+  &__item {
+    width: 550px;
+    height: 255px;
+    background-color: $lightGray;
+    mix-blend-mode: normal;
+    border-radius: 7px;
+    padding: 25px 35px;
+    .info__user {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+  }
 }
 
 .swiper-container {
-  width: 600px;
-  height: 300px;
+  width: 1066px;
+  height: 255px;
 }
-// clip-path: polygon(100% 30%, 100% 50%, 100% 75%, 30% 75%, 0% 50%, 30% 30%);
 
-// .rating-result {
-// 	width: 265px;
-// 	margin: 0 auto;
-// }
-// .rating-result span {
-// 	padding: 0;
-// 	font-size: 32px;
-// 	margin: 0 3px;
-// 	line-height: 1;
-// 	color: lightgrey;
-// 	text-shadow: 1px 1px #bbb;
-// }
-// .rating-result > span:before {
-// 	content: '★';
-// }
-// .rating-result > span.active {
-// 	color: gold;
-// 	text-shadow: 1px 1px #c60;
-// }
+.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
+}
+
+.swiper-button-next {
+}
+
+.user__photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.user__name {
+  font-weight: bold;
+  font-size: var(--text-biggest-size);
+  line-height: 24px;
+  color: $darkGray;
+  letter-spacing: 0.623377px;
+}
+
+.user__date {
+  margin-left: 130px;
+  position: relative;
+}
+
+.user__text {
+  width: 440px;
+  font-weight: normal;
+  font-size: var(--text-base-size);
+  line-height: 19px;
+  letter-spacing: 0.623377px;
+  margin-bottom: 8px;
+}
+
+.user__verified {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 13px;
+  position: relative;
+  color: $star;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.icon_verify {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: url('../img/vefiried.svg') no-repeat;
+  margin-right: 65px;
+}
+
+.user__rating {
+  width: 265px;
+  margin: -30px 0 25px 70px;
+}
+.user__rating span {
+  font-size: 25px;
+  line-height: 1;
+  color: lightgrey;
+}
+.user__rating > span:before {
+  content: "★";
+}
+.user__rating > span.active {
+  color: $star;
+}
