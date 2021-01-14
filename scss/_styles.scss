@@ -9,7 +9,6 @@ body {
 }
 
 .header {
- 
   &__menu {
     display: flex;
     flex-direction: row;
@@ -137,6 +136,7 @@ body {
     }
     .input__data {
       background: $orange;
+      border-radius: 5px;
     }
     .input__form {
       display: flex;
@@ -177,7 +177,7 @@ body {
       cursor: pointer;
     }
     .radio + label:before {
-      content: '';
+      content: "";
       position: absolute;
       top: -3px;
       left: 0;
@@ -188,7 +188,7 @@ body {
       background: $white;
     }
     .radio + label:after {
-      content: '';
+      content: "";
       position: absolute;
       top: 1px;
       left: 4px;
@@ -196,9 +196,9 @@ body {
       height: 16px;
       border-radius: 50%;
       background: $bloodRed;
-      box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
       opacity: 0;
-      transition: .2s;
+      transition: 0.2s;
     }
     .radio:checked + label:after {
       opacity: 1;
@@ -219,8 +219,22 @@ body {
         line-height: 24px;
         letter-spacing: 0.872727px;
         color: $white;
+        border: none;
         outline: none;
         position: relative;
+        transition: all 0.2s;
+        &:hover {
+          transform: scale(0.9);
+        }
+      }
+      &--icon {
+        position: absolute;
+        width: 20px;
+        height: 8px;
+        background: url("../img/sort-1_copy.svg") no-repeat;
+        background-size: cover;
+        right: 10px;
+        top: 45%;
       }
       &--description {
         font-size: 11px;
@@ -233,17 +247,7 @@ body {
       }
     }
 
-    .data__input--icon {
-      position: absolute;
-      width: 20px;
-      height: 8px;
-      background: url("../img/sort-1_copy.svg") no-repeat;
-      background-size: cover;
-      right: 10px;
-      top: 45%;
-    }
-
-    .data__input--item {
+    .data__input .data__input--item {
       background: $white;
       border: 1px solid $white;
       box-sizing: border-box;
@@ -280,25 +284,489 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 70px;
   &__title {
     font-size: var(--text-head-size);
     color: $colorHeading;
+    font-weight: bold;
+    line-height: 48px;
+    letter-spacing: 0.545455px;
+    margin-bottom: 55px;
   }
   &__list {
     display: flex;
-    justify-content: center;
     flex-direction: row;
+    justify-content: space-between;
+    position: relative;
   }
   &__item {
+    width: 110px;
+    height: 137px;
+    margin: 0 60px 0 90px;
   }
+
+  &__bg--ligthGray {
+    @include border($lightGray);
+  }
+
+  &__bg--gray {
+    @include border($gray);
+  }
+
+  &__bg--yellow {
+    @include border($yellow);
+  }
+
+  &__bg--orange {
+    @include border($orange);
+  }
+
+  &__icon {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+  }
+
+  &__icon--profile {
+    @include icon("../img/Fill-49.svg");
+  }
+
+  &__icon--document {
+    @include icon("../img/Fill-7.svg");
+  }
+
+  &__icon--search {
+    @include icon("../img/Fill-6.svg");
+  }
+
+  &__icon--finish {
+    @include icon("../img/Fill-11.svg");
+  }
+
   &__text {
-    min-width: 180px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: var(--text-base-size);
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.727273px;
+    color: $darklyGray;
   }
-  &__arrow--gray {
+
+  &__arrow {
+    margin: 0 90px 0 70px;
+  }
+
+  &__arrow--orange {
+    @include arrowStyle("../img/Combined_Shape_3.svg", 35%, 15%);
   }
   &__arrow--yellow {
+    @include arrowStyle("../img/Combined_Shape_2.svg", 35%, 40%);
   }
-  &__arrow--orange {
+  &__arrow--gray {
+    @include arrowStyle("../img/Combined_Shape.svg", 35%, 66%);
+  }
+}
+
+.advantages {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+  margin-bottom: 40px;
+
+  &__img {
+    position: absolute;
+    left: 6%;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 115px 160px 0 0;
+  }
+
+  &__item {
+    margin: 30px 0;
+    width: 575px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.545455px;
+    margin-bottom: 15px;
+    color: $darkOrange;
+  }
+
+  &__text {
+    font-size: var(--text-base-size);
+    line-height: 21px;
+    letter-spacing: 0.545455px;
+    color: $darkGray;
+  }
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $lightWhite;
+  margin-bottom: 100px;
+
+  &__title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.545455px;
+    color: $darkGray;
+    margin: 33px 0 5px 0;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+
+  &__item {
+    margin: 0 20px;
+    width: 100px;
+    height: 50px;
+    position: relative;
+  }
+
+  &__item--nbc {
+    @include tvIcon("../img/news__logo/NBC_logo.svg");
+  }
+  &__item--gma {
+    @include tvIcon("../img/news__logo/good_morning_logo.svg");
+  }
+  &__item--abc {
+    @include tvIcon("../img/news__logo/fill-3.svg");
+  }
+  &__item--cbs {
+    @include tvIcon("../img/news__logo/CBS_logo.svg");
+  }
+  &__item--time {
+    @include tvIcon("../img/news__logo/time_logo.svg");
+  }
+  &__item--usa {
+    @include tvIcon("../img/news__logo/usa_today_logo.svg");
+  }
+}
+
+.benefits {
+  margin-bottom: 177px;
+  &__title {
+    font-weight: 700;
+    font-size: var(--text-head-size);
+    line-height: 48px;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.545455px;
+    color: $darkGray;
+    margin-bottom: 46px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__leftSide {
+    width: 570px;
+    margin-right: 50px;
+  }
+
+  &__facts {
+    .facts__title {
+      font-weight: bold;
+      font-size: var(--text-subhead-size);
+      line-height: 32px;
+      letter-spacing: 0.545455px;
+      color: $darkOrange;
+    }
+    .facts__subtitle {
+      width: 340px;
+      font-size: var(--text-base-size);
+      line-height: 21px;
+      letter-spacing: 0.55px;
+      color: $black;
+      margin-bottom: 10px;
+    }
+    .facts__text {
+      color: $darkGray;
+      font-size: var(--text-base-size);
+      line-height: 21px;
+      letter-spacing: 0.545455px;
+      margin-bottom: 18px;
+    }
+
+    .facts__item {
+      position: relative;
+      font-size: 15px;
+      color: #000;
+      margin: 25px 0 35px 0;
+      padding-left: 45px;
+    }
+
+    .facts__icon::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: 0;
+      top: 0;
+      background: url("../img/danger.svg") center 0 no-repeat;
+    }
+  }
+
+  &__rightSide {
+    background: $orange;
+    box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.238338);
+    border-radius: 5px;
+    width: 470px;
+    height: 730px;
+    color: $white;
+    position: relative;
+
+    .divorseTool {
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      align-items: center;
+      padding: 0 26px 0 10px;
+    }
+
+    .divorseTool__image {
+      padding: 24px 0 15px 0;
+    }
+
+    .divorseTool__title {
+      font-weight: bold;
+      width: 320px;
+      font-size: var(--text-subhead-size);
+      line-height: 32px;
+      text-align: center;
+      letter-spacing: 0.545455px;
+      margin-bottom: 10px;
+    }
+
+    .divorseTool__text {
+      font-size: var(--text-base-size);
+      line-height: 21px;
+      letter-spacing: 0.484848px;
+    }
+
+    .benefits__company {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      color: #000;
+      position: relative;
+      bottom: -80px;
+      .company__name--trust {
+        background: url("/img/truste-pay-card-logo.svg") no-repeat center;
+        background-size: cover;
+        width: 89px;
+        height: 51px;
+        margin-right: 20px;
+      }
+      .company__name--norton {
+        background: url("/img/godaddy_logo.svg") no-repeat center;
+        background-size: cover;
+        width: 89px;
+        height: 51px;
+        margin-right: 20px;
+      }
+      .company__name--mcafee {
+        background: url("/img/mcafee.svg") no-repeat center;
+        background-size: cover;
+        width: 89px;
+        height: 51px;
+        margin-right: 20px;
+      }
+      .company__name--godaddy {
+        background: url("/img/godaddy_logo_1.svg") no-repeat center;
+        background-size: cover;
+        width: 89px;
+        height: 51px;
+        margin-right: 20px;
+      }
+    }
+
+    .divorseTool__item {
+      position: relative;
+      font-size: var(--text-base-size);
+      font-size: 16px;
+      line-height: 21px;
+      letter-spacing: 0.545455px;
+      margin: 25px 0 20px 0;
+      padding-left: 45px;
+    }
+
+    .divorseTool__icon::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: 0;
+      top: 0;
+      background: url("../img/check-circle.svg") center 0 no-repeat;
+    }
+
+    .divorseTool__btn {
+      background: $buttonColor;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+      width: 427px;
+      height: 50px;
+      font-size: var(--text-biggest-size);
+      line-height: 24px;
+      letter-spacing: 0.872727px;
+      color: $white;
+      border: none;
+      outline: none;
+      position: relative;
+      transition: all 0.2s;
+      &:hover {
+        transform: scale(0.9);
+      }
+    }
+
+    .divorseTool__btnIcon {
+      position: absolute;
+      width: 20px;
+      height: 8px;
+      background: url("../img/sort-1_copy.svg") no-repeat;
+      background-size: cover;
+      right: 10px;
+      top: 45%;
+    }
+  }
+}
+
+.commitment {
+  background-color: $lightWhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+  &__title {
+    font-size: var(--text-head-size);
+    line-height: 48px;
+    letter-spacing: 0.545455px;
+    font-weight: bold;
+    color: $darkOrange;
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.484848px;
+    color: $darkGray;
+    width: 821px;
+    margin-bottom: 37px;
+  }
+  &__list {
+    margin: 0 170px 0 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  &__item {
+    width: 320px;
+    display: flex;
+    flex-direction: row;
+    .item__title {
+      width: 165px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: var(--text-base-size);
+      line-height: 21px;
+      letter-spacing: 0.484848px;
+      color: $ligthBlack;
+    }
+    .item__text {
+      width: 218px;
+      margin-bottom: 50px;
+    }
+    .item__textArea {
+      margin-left: 10px;
+    }
+  }
+  &__bg--ligthGray {
+    @include border($lightGray);
+  }
+
+  &__bg--gray {
+    @include border($gray);
+  }
+
+  &__bg--yellow {
+    @include border($yellow);
+  }
+
+  &__bg--orange {
+    @include border($orange);
+  }
+
+  &__icon {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+  }
+
+  &__icon--document {
+    @include icon("../img/Document_1.svg");
+  }
+
+  &__icon--referee {
+    @include icon("../img/Referee_2.svg");
+  }
+
+  &__icon--building {
+    @include icon("../img/Building_3.svg");
+  }
+
+  &__icon--court {
+    @include icon("../img/Court_4.svg");
+  }
+
+  &__icon--libra {
+    @include icon("../img/Libra_5.svg");
+  }
+
+  &__icon--book {
+    @include icon("../img/Book_6.svg");
+  }
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    font-weight: bold;
+    font-size: var(--text-head-size);
+    line-height: 48px;
+    letter-spacing: 0.545455px;
+    color: $darkGray;
+    margin-bottom: 35px;
   }
 }
 

@@ -1,0 +1,33 @@
+@mixin arrowStyle($way, $top, $right) {
+  position: absolute;
+  width: 14px;
+  height: 12px;
+  top: $top;
+  right: $right;
+  background: url($way);
+  background-size: cover;
+}
+
+@mixin border($bgc) {
+  width: 78px;
+  height: 78px;
+  position: relative;
+  border-radius: 50%;
+  background: $bgc;
+  mix-blend-mode: normal;
+  opacity: 0.24;
+}
+
+
+@mixin icon($way) {
+  background: url($way);
+  background-size: cover;
+}
+
+@mixin tvIcon($way) {
+  position: absolute;
+  background: url($way) no-repeat center;
+  background-size: cover;
+  width: 86px;
+  height: 50px;
+}
