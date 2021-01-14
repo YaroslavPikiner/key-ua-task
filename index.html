@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/main.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <title>Document</title>
@@ -15,55 +15,52 @@
 <body>
   <header class="header">
     <section class="header__menu">
-      <img src="./img/Group 52.svg" alt="">
+      <img class="header__logo" src="./img/Group 52.svg" alt="">
       <nav class="header__navigation">
-        <h5 class="header__item"><a href="#">Home</a></h5>
-        <h5 class="header__item"><a href="#portfolio">Portfolio</a></h5>
-        <h5 class="header__item"><a href="#">Blog</a></h5>
-        <h5 class="header__item"><a href="#">Pages</a></h5>
-        <h5 class="header__item"><a href="#about">About</a></h5>
-        <h5 class="header__item"><a href="#contact">Contact</a></h5>
+        <h5 class="header__item"><a href="#">Cómo funciona</a></h5>
+        <h5 class="header__item"><a href="#portfolio">¿Por Qué Nosotros?</a></h5>
+        <h5 class="header__item"><a href="#">Comentarios</a></h5>
+        <h5 class="header__item"><a href="#">FAQ</a></h5>
+        <h5 class="header__item"><a href="#about">Contáctenos</a></h5>
+        <h5 class="header__item"><a href="#contact">EMPREZAR</a></h5>
+        <h5 class="header__item"><a href="#contact">Iniciar Sesión</a></h5>
       </nav>
     </section>
   </header><!-- .header-->
   <main class="content">
     <section class="offer">
       <h1 class="offer__title">Comience Su Divorcio Online Sin Honorarios de Abogados</h1>
-      <div class="offer__img">
-        <img class='offer__img__woman' src="./img/Mask.svg" alt="">
-      </div>
+      <img class='offer__img' src="./img/divorse_bg.png" alt="">
       <ul class="offer__features">
-        <li class="features__item"><img src="./img/flag.svg" alt="За стеклом">
-          <h5>
+        <li class="features__item"><span class="features__icon"></span>
+          <h5 class="features__text">
             Comience su divorcio en línea
             Sin honorarios de abogado
           </h5>
         </li>
-        <li class="features__item"><img src="./img/flag.svg" alt="За стеклом">
-          <h5>
+        <li class="features__item"><span class="features__icon"></span>
+          <h5  class="features__text">
             Nuestro sistema fue pionero en la industria del divorcio en línea
           </h5>
         </li>
-        <li class="features__item"><img src="./img/flag.svg" alt="За стеклом">
-          <h5>
+        <li class="features__item"><span class="features__icon"></span>
+          <h5 class="features__text">
             Durante 19 años, más de 500,000
             personas han usado nuestras herramientas
           </h5>
         </li>
-        <li class="features__item"><img src="./img/flag.svg" alt="За стеклом">
-          <h5>
+        <li class="features__item"><span class="features__icon"></span>
+          <h5 class="features__text">
             Ofrecemos el mejor precio del mercado.
           </h5>
         </li>
       </ul>
       <div class="offer__input">
         <div class="input__warranty">
-          <h4>Vea si califica</h4>
-          <div class="warranty">
-            <h2>100%|</h2>
-            <h5>DE GARANTÍA DE APROBACIÓN EN
-              EL TRIBUNAL</h5>
+          <div class="warranty__wrapper">
+            <h4>Vea si califica</h4>
           </div>
+          <h2 class="warranty">100%|DE GARANTÍA DE APROBACIÓN EN EL TRIBUNAL</h2>
           <div class="warranty__price">
             $139 BEST PRICE
           </div>
@@ -455,11 +452,22 @@
     <section class="footer__terms">
       <p class="terms__rule">Mapa del sitio</p>
       <p class="terms__rule">© 2000-2019 Online Divorcio, Todos los derechos reservados</p>
-      <p class="terms__rule">Aviso legal: Divorcio en línea no es un bufete de abogados y su sservicios de la página web y los formularios no sustituyen el asesoramiento de un abogado. Divorcio en línea proporciona acceso a servicios de autoayuda asistidos por computadora en su dirección específica. La página web del Divorcio en línea y las instrucciones escritas brindan información general sobre el proceso de divorcio solamente; No podemos darle ningún consejo específico, opiniones o recomendaciones sobre su selección o relleno de formularios o sus derechos, recursos u opciones legales particulares. OnlineDivorce.com es un sitio web que proporciona acceso a cuestionarios en línea autoguiados. El Divorcio en línea no vende formularios en blanco, y un usuario puede descargarlos en el sitio web de un tribunal. Las comunicaciones entre Usted y Divorcio en línea se rigen por nuestra Política de privacidad, pero no están cubiertas por los privilegios de abogado-cliente o producto de trabajo. Su acceso al sitio web de Divorcio en línea está sujeto y regido por nuestros Términos de uso. Cualquier compra de Divorcio en línea está sujeta y regida por nuestros Términos y condiciones.</p>
+      <p class="terms__rule">Aviso legal: Divorcio en línea no es un bufete de abogados y su sservicios de la página web
+        y los formularios no sustituyen el asesoramiento de un abogado. Divorcio en línea proporciona acceso a servicios
+        de autoayuda asistidos por computadora en su dirección específica. La página web del Divorcio en línea y las
+        instrucciones escritas brindan información general sobre el proceso de divorcio solamente; No podemos darle
+        ningún consejo específico, opiniones o recomendaciones sobre su selección o relleno de formularios o sus
+        derechos, recursos u opciones legales particulares. OnlineDivorce.com es un sitio web que proporciona acceso a
+        cuestionarios en línea autoguiados. El Divorcio en línea no vende formularios en blanco, y un usuario puede
+        descargarlos en el sitio web de un tribunal. Las comunicaciones entre Usted y Divorcio en línea se rigen por
+        nuestra Política de privacidad, pero no están cubiertas por los privilegios de abogado-cliente o producto de
+        trabajo. Su acceso al sitio web de Divorcio en línea está sujeto y regido por nuestros Términos de uso.
+        Cualquier compra de Divorcio en línea está sujeta y regida por nuestros Términos y condiciones.</p>
     </section>
   </footer>
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./index.js"></script>
 </body>
+
 </html>

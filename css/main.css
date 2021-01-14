@@ -340,29 +340,96 @@ template {
 [hidden] {
   display: none; }
 
+* {
+  text-decoration: none; }
+
 body {
   height: 4500px;
-  width: 100%;
-  background-color: #e5e5e5; }
+  width: 1440px;
+  font-family: var(--font-primary), var(--font-secondary); }
 
 .header__menu {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  border: 1px solid black; }
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); }
+
+.header__logo {
+  margin-left: 55px; }
 
 .header__navigation {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: space-between; }
 
 .header__item {
-  height: 14px;
-  width: 79px;
-  left: 505px;
-  top: 41px;
+  font-size: var(--text-small-size);
   border-radius: nullpx;
-  margin: 40px 0 30px 0; }
+  margin: 30px 0 30px 20px;
+  padding: 10px 15px;
+  line-height: 13px;
+  letter-spacing: 0.727273px;
+  transition: all 0.2s;
+  color: #575c6b; }
+  .header__item:hover {
+    background: #cc2229;
+    border-radius: 5px;
+    color: #ffffff; }
+
+.offer {
+  position: relative; }
+  .offer__title {
+    margin: 80px 0 0 140px;
+    width: 750px;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 72px;
+    letter-spacing: 0.818182px; }
+  .offer__img {
+    position: absolute;
+    z-index: 0;
+    top: -80px;
+    right: 0; }
+  .offer__features {
+    margin: 40px 0 55px 140px; }
+    .offer__features .features__item {
+      position: relative;
+      font-size: 15px;
+      color: #000;
+      margin-top: 25px;
+      padding-left: 45px; }
+    .offer__features .features__icon::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: 0;
+      top: 0;
+      background: url("../img/flag.svg") center 0 no-repeat; }
+  .offer__input {
+    height: 279px;
+    width: 1050px;
+    margin: 0 140px; }
+    .offer__input .input__warranty {
+      display: flex;
+      flex-direction: row; }
+      .offer__input .input__warranty .warranty__wrapper {
+        background: linear-gradient(317.76deg, #FFA600 40.02%, #FF7800 68.68%, #FF6D00 83.15%); }
+      .offer__input .input__warranty .warranty {
+        clip-path: polygon(100% 30%, 100% 50%, 100% 75%, 30% 75%, 0% 50%, 30% 30%);
+        background-color: #6e61f5; }
+    .offer__input .input__data {
+      background: linear-gradient(317.76deg, #FFA600 40.02%, #FF7800 68.68%, #FF6D00 83.15%); }
 
 .swiper-container {
   width: 600px;
   height: 300px; }
+
+:root {
+  --font-primary: 'Exo';
+  --font-secondary: 'sans-serif';
+  --text-base-size: 16px;
+  --text-biggest-size: 18px;
+  --text-subhead-size: 24px;
+  --text-head-size: 36px;
+  --text-small-size: 10px; }

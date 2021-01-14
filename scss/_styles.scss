@@ -1,28 +1,102 @@
+* {
+  text-decoration: none;
+}
+
 body {
   height: 4500px;
-  width: 100%;
-  background-color: #e5e5e5;
+  width: 1440px;
+  font-family: var(--font-primary), var(--font-secondary);
 }
 
-.header__menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  border: 1px solid black;
+.header {
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  &__logo {
+    margin-left: 55px;
+  }
+  &__navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__item {
+    font-size: var(--text-small-size);
+    border-radius: nullpx;
+    margin: 30px 0 30px 20px;
+    padding: 10px 15px;
+    line-height: 13px;
+    letter-spacing: 0.727273px;
+    transition: all 0.2s;
+    color: $darkGray;
+    &:hover {
+      background: $red;
+      border-radius: 5px;
+      color: $white;
+    }
+  }
 }
 
-.header__navigation {
-  display: flex;
-  flex-direction: row;
-}
+.offer {
+  position: relative;
+  &__title {
+    margin: 80px 0 0 140px;
+    width: 750px;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 72px;
+    letter-spacing: 0.818182px;
+  }
+  &__img {
+    position: absolute;
+    z-index: 0;
+    top: -80px;
+    right: 0;
+  }
+  &__features {
+    margin: 40px 0 55px 140px;
+    .features__item {
+      position: relative;
+      font-size: 15px;
+      color: #000;
+      margin-top: 25px;
+      padding-left: 45px;
+    }
 
-.header__item {
-  height: 14px;
-  width: 79px;
-  left: 505px;
-  top: 41px;
-  border-radius: nullpx;
-  margin: 40px 0 30px 0;
+    .features__icon::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: 0;
+      top: 0;
+      background: url("../img/flag.svg") center 0 no-repeat;
+    }
+  }
+
+  &__input {
+    height: 279px;
+    width: 1050px;
+    margin: 0 140px;
+    .input__warranty {
+      display: flex;
+      flex-direction: row;
+      .warranty__wrapper {
+        background: $orange;
+      }
+
+      .warranty {
+        clip-path: polygon(100% 30%, 100% 50%, 100% 75%, 30% 75%, 0% 50%, 30% 30%);
+        background-color: $violet;
+      }
+    }
+    .input__data {
+      background: $orange;
+    }
+  }
 }
 
 .swiper-container {
@@ -30,7 +104,6 @@ body {
   height: 300px;
 }
 // clip-path: polygon(100% 30%, 100% 50%, 100% 75%, 30% 75%, 0% 50%, 30% 30%);
-
 
 // .rating-result {
 // 	width: 265px;
