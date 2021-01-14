@@ -39,7 +39,7 @@
           </h5>
         </li>
         <li class="features__item"><span class="features__icon"></span>
-          <h5  class="features__text">
+          <h5 class="features__text">
             Nuestro sistema fue pionero en la industria del divorcio en línea
           </h5>
         </li>
@@ -62,8 +62,10 @@
           </div>
           <div class="warranty__wrapper--violet">
             <h2 class="warranty">100%|</h2>
-            <span class="warranty__text">DE GARANTÍA DE APROBACIÓN EN </span>
-            <span class="warranty__text">EL TRIBUNAL o le devolvemos su dinero</span>
+            <div class="warranty__wrapper--text">
+              <p class="warranty__text">DE GARANTÍA DE APROBACIÓN EN </p>
+              <p class="warranty__text">EL TRIBUNAL o le devolvemos su dinero</p>
+            </div>
           </div>
           <div class="warranty__price">
             <span class="price">139$</span>
@@ -71,31 +73,38 @@
           </div>
         </div>
         <div class="input__data">
-          <form>
+          <form class="input__form">
             <div class="data__checkbox">
-              <p>¿Sabe la ubicación de su cónyuge?</p>
-              <label for="subscribeNews">Si</label>
-              <input class="data__checkbox--item" type="checkbox" id="subscribeNews" name="subscribe"
-                value="newsletter">
-              <label for="subscribeNews">No</label>
-              <input class="data__checkbox--item" type="checkbox" id="subscribeNews" name="subscribe"
-                value="newsletter">
-
-              <p>Can you and your spouse agree to the division of property, debts and all child related issues?</p>
-              <label for="subscribeNews">Si</label>
-              <input class="data__checkbox--item" type="checkbox" id="subscribeNews" name="subscribe"
-                value="newsletter">
-              <label for="subscribeNews">No</label>
-              <input class="data__checkbox--item" type="checkbox" id="subscribeNews" name="subscribe"
-                value="newsletter">
+              <div class="checkbox__item">
+                <p>¿Sabe la ubicación de su cónyuge?</p>
+                <input class="radio" type="radio" id="radio1" name="subscribe"
+                  value="newsletter">
+                  <label class="data__checkbox--item" for="radio1">Si</label>
+                <input class="radio" type="radio" id="radio2" name="subscribe"
+                  value="newsletter">
+                  <label class="data__checkbox--item" for="radio2">No</label>
+              </div>
+              <div class="checkbox__item">
+                <p>Can you and your spouse agree to the division of property, debts and all child related issues?</p>
+                <input class="radio"  type="radio" id="radio3" name="subscribe"
+                  value="newsletter">
+                  <label class="data__checkbox--item" for="radio3">Si</label>
+                <input class="radio" type="radio" id="radio4" name="subscribe"
+                  value="newsletter">
+                  <label class="data__checkbox--item" for="radio4">No</label>
+              </div>
             </div>
             <div class="data__input">
-              <input type="text" placeholder="Seleccione su estado">
-              <input type="number" placeholder="Nombre">
-              <input type="email" placeholder="Ingrese su email">
-              <input type="text" placeholder="Apellido">
-              <button type='submit'>Verificar elegibilidad <span></span></button>
-              <span>Al hacer clic en “Verificar Elegibilidad”, usted acepta los Términos y Condiciones</span>
+              <input class="data__input--item data__input--sort" type="number" placeholder="Seleccione su estado">
+              <input class="data__input--item " type="text" placeholder="Seleccione su estado">
+              <input class="data__input--item" type="email" placeholder="Ingrese su email">
+              <input class="data__input--item" type="text" placeholder="Apellido">
+              <button type='submit' class="data__input--btn">Verificar elegibilidad
+                <span class="data__input--icon"></span>
+              </button>
+              <span class="data__input--description">Al hacer clic en “Verificar Elegibilidad”, usted acepta los
+                Términos y Condiciones
+              </span>
             </div>
           </form>
         </div>
@@ -105,7 +114,7 @@
     <section class="instruction">
       <h3 class="instruction__title">Solo cuatro pasos</h3>
       <div class="instruction__list">
-        <section class="instruction__list">
+        <section class="instruction__item">
           <div class="instruction__bg--ligthGray">
             <span class="instruction__icon instruction__icon--profile"></span>
           </div>
@@ -114,7 +123,7 @@
 
         <span class="instruction__arrow--gray"></span>
 
-        <section class="instruction__list">
+        <section class="instruction__item">
           <div class="instruction__bg--gray">
             <span class="instruction__icon instruction__icon--document"></span>
           </div>
@@ -123,7 +132,7 @@
 
         <span class="instruction__arrow--yellow"></span>
 
-        <section class="instruction__list">
+        <section class="instruction__item">
           <div class="instruction__bg--yellow">
             <span class="instruction__icon instruction__icon--search"></span>
           </div>
@@ -132,7 +141,7 @@
 
         <span class="instruction__arrow--orange"></span>
 
-        <section class="instruction__list">
+        <section class="instruction__item">
           <div class="instruction__bg--orange">
             <span class="instruction__icon instruction__icon--finish"></span>
           </div>
