@@ -768,7 +768,9 @@ body {
     color: $darkGray;
     margin-bottom: 35px;
   }
-
+  &__container {
+    position: relative;
+  }
   &__item {
     width: 550px;
     height: 255px;
@@ -789,13 +791,31 @@ body {
 .swiper-container {
   width: 1066px;
   height: 255px;
+  position: relative;
 }
 
-.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
+.slider__btn {
+  width: 15px;
+  height: 25px;
+  position: absolute;
 }
 
-.swiper-button-next {
+.slider__icon--next {
+  background: url('../img/chevron-right.svg') no-repeat center;
+  background-size: cover;
+  top: 100%;
+  right: 0;
+
 }
+
+.slider__icon--prev {
+  position: absolute;
+  background: url('../img/chevron-left.svg') no-repeat center;
+  background-size: cover;
+  top: 100%;
+  left: 0;
+}
+
 
 .user__photo {
   width: 60px;
@@ -839,7 +859,7 @@ body {
   margin-right: 20px;
 }
 
-.icon_verify {
+.icon__verify {
   position: absolute;
   width: 10px;
   height: 10px;
