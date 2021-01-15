@@ -364,6 +364,11 @@ body {
   flex-direction: row;
   justify-content: space-between; }
 
+.header__item > a {
+  color: #000; }
+  .header__item > a:hover {
+    color: #ffffff; }
+
 .header__item {
   font-size: var(--text-small-size);
   border-radius: nullpx;

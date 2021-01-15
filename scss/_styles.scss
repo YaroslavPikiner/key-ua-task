@@ -24,6 +24,12 @@ body {
     flex-direction: row;
     justify-content: space-between;
   }
+  &__item > a {
+    color: $black;
+    &:hover {
+      color: $white;
+    }
+  }
   &__item {
     font-size: var(--text-small-size);
     border-radius: nullpx;
@@ -805,7 +811,6 @@ body {
   background-size: cover;
   top: 100%;
   right: 0;
-
 }
 
 .slider__icon--prev {
