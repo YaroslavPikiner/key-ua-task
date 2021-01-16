@@ -1,0 +1,191 @@
+.benefits {
+  margin-bottom: 120px;
+  &__title {
+    font-weight: 700;
+    font-size: var(--text-head-size);
+    line-height: 48px;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.545455px;
+    color: $darkGray;
+    margin-bottom: 46px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__leftSide {
+    width: 570px;
+    margin-right: 50px;
+  }
+
+  &__facts {
+    .facts__title {
+      font-weight: bold;
+      font-size: var(--text-subhead-size);
+      line-height: 32px;
+      letter-spacing: 0.545455px;
+      color: $darkOrange;
+    }
+    .facts__subtitle {
+      width: 340px;
+      font-size: var(--text-base-size);
+      line-height: 21px;
+      letter-spacing: 0.55px;
+      color: $black;
+      margin-bottom: 10px;
+    }
+    .facts__text {
+      color: $darkGray;
+      font-size: var(--text-base-size);
+      line-height: 21px;
+      letter-spacing: 0.545455px;
+      margin-bottom: 18px;
+    }
+
+    .facts__item {
+      position: relative;
+      font-size: 15px;
+      color: #000;
+      margin: 25px 0 35px 0;
+      padding-left: 45px;
+    }
+
+    .facts__icon::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: 0;
+      top: 0;
+      background: url("../img/danger.svg") center 0 no-repeat;
+    }
+  }
+
+  &__rightSide {
+    background: $orange;
+    box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.238338);
+    border-radius: 5px;
+    width: 470px;
+    height: 730px;
+    color: $white;
+    position: relative;
+
+    .divorseTool {
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      align-items: center;
+      padding: 0 26px 0 10px;
+    }
+
+    .divorseTool__image {
+      padding: 24px 0 15px 0;
+    }
+
+    .divorseTool__title {
+      font-weight: bold;
+      width: 320px;
+      font-size: var(--text-subhead-size);
+      line-height: 32px;
+      text-align: center;
+      letter-spacing: 0.545455px;
+      margin-bottom: 10px;
+    }
+
+    .divorseTool__text {
+      font-size: var(--text-base-size);
+      line-height: 21px;
+      letter-spacing: 0.484848px;
+    }
+
+    .benefits__company {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      color: #000;
+      position: relative;
+      bottom: -80px;
+      .company__name--trust {
+        background: url("/img/truste-pay-card-logo.svg") no-repeat center;
+        background-size: cover;
+        width: 89px;
+        height: 51px;
+        margin-right: 20px;
+      }
+      .company__name--norton {
+        background: url("/img/godaddy_logo.svg") no-repeat center;
+        background-size: cover;
+        width: 89px;
+        height: 51px;
+        margin-right: 20px;
+      }
+      .company__name--mcafee {
+        background: url("/img/mcafee.svg") no-repeat center;
+        background-size: cover;
+        width: 89px;
+        height: 51px;
+        margin-right: 20px;
+      }
+      .company__name--godaddy {
+        background: url("/img/godaddy_logo_1.svg") no-repeat center;
+        background-size: cover;
+        width: 89px;
+        height: 51px;
+        margin-right: 20px;
+      }
+    }
+
+    .divorseTool__item {
+      position: relative;
+      font-size: var(--text-base-size);
+      font-size: 16px;
+      line-height: 21px;
+      letter-spacing: 0.545455px;
+      margin: 25px 0 20px 0;
+      padding-left: 45px;
+    }
+
+    .divorseTool__icon::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: 0;
+      top: 0;
+      background: url("../img/check-circle.svg") center 0 no-repeat;
+    }
+
+    .divorseTool__btn {
+      background: $buttonColor;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+      width: 427px;
+      height: 50px;
+      font-size: var(--text-biggest-size);
+      line-height: 24px;
+      letter-spacing: 0.872727px;
+      color: $white;
+      border: none;
+      outline: none;
+      position: relative;
+      transition: all 0.2s;
+      &:hover {
+        transform: scale(0.9);
+      }
+    }
+
+    .divorseTool__btnIcon {
+      position: absolute;
+      width: 20px;
+      height: 8px;
+      background: url("../img/sort-1_copy.svg") no-repeat;
+      background-size: cover;
+      right: 10px;
+      top: 45%;
+    }
+  }
+}

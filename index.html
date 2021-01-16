@@ -15,14 +15,14 @@
 <body>
   <header class="header">
     <section class="header__menu">
-      <img class="header__logo" src="./img/Group 52.svg" alt="">
+      <img src="./img/Group 52.svg" alt="header__logo" class="header__logo">
       <nav class="header__navigation">
         <h5 class="header__item"><a href="#">Cómo funciona</a></h5>
         <h5 class="header__item"><a href="#portfolio">¿Por Qué Nosotros?</a></h5>
         <h5 class="header__item"><a href="#">Comentarios</a></h5>
         <h5 class="header__item"><a href="#">FAQ</a></h5>
         <h5 class="header__item"><a href="#about">Contáctenos</a></h5>
-        <h5 class="header__item"><a href="#contact">EMPREZAR</a></h5>
+        <h5 class="header__item"><a href="#contact">Emprezar</a></h5>
         <h5 class="header__item"><a href="#contact">Iniciar Sesión</a></h5>
       </nav>
     </section>
@@ -30,50 +30,55 @@
   <main class="content">
     <section class="offer">
       <h1 class="offer__title">Comience Su Divorcio Online Sin Honorarios de Abogados</h1>
-      <img class='offer__img' src="./img/divorse_bg.png" alt="">
+
+      <picture class='offer__img'>
+        <source media="(max-width:400px)" srcset="./img/maria-ballesteros-531264-unsplash.png">
+        <img src="./img/divorse_bg.png " style="width:auto;" alt="Woman">
+      </picture>
+
       <ul class="offer__features">
-        <li class="features__item"><span class="features__icon"></span>
-          <h5 class="features__text">
+        <li class="offer__item"><span class="offer__icon"></span>
+          <h5 class="offer__text">
             Comience su divorcio en línea
             Sin honorarios de abogado
           </h5>
         </li>
-        <li class="features__item"><span class="features__icon"></span>
-          <h5 class="features__text">
+        <li class="offer__item"><span class="offer__icon"></span>
+          <h5 class="offer__text">
             Nuestro sistema fue pionero en la industria del divorcio en línea
           </h5>
         </li>
-        <li class="features__item"><span class="features__icon"></span>
-          <h5 class="features__text">
+        <li class="offer__item"><span class="offer__icon"></span>
+          <h5 class="offer__text">
             Durante 19 años, más de 500,000
             personas han usado nuestras herramientas
           </h5>
         </li>
-        <li class="features__item"><span class="features__icon"></span>
-          <h5 class="features__text">
+        <li class="offer__item"><span class="offer__icon"></span>
+          <h5 class="offer__text">
             Ofrecemos el mejor precio del mercado.
           </h5>
         </li>
       </ul>
       <div class="offer__input">
-        <div class="input__warranty">
-          <div class="warranty__wrapper--orange">
+        <div class="offer__warranty">
+          <div class="offer__warranty--wrapper">
             <h4>Vea si califica</h4>
           </div>
-          <div class="warranty__wrapper--violet">
+          <div class="offer__warranty--wrapper">
             <h2 class="warranty">100%|</h2>
-            <div class="warranty__wrapper--text">
-              <p class="warranty__text">DE GARANTÍA DE APROBACIÓN EN </p>
-              <p class="warranty__text">EL TRIBUNAL o le devolvemos su dinero</p>
+            <div class="offer__warranty--text">
+              <p>DE GARANTÍA DE APROBACIÓN EN </p>
+              <p>EL TRIBUNAL o le devolvemos su dinero</p>
             </div>
           </div>
-          <div class="warranty__price">
+          <div class="offer__price">
             <span class="price">139$</span>
             <span class="text">best price</span>
           </div>
         </div>
-        <div class="input__data">
-          <form class="input__form">
+        <div class="offer__data">
+          <form class="offer__form">
             <div class="data__checkbox">
               <div class="checkbox__item">
                 <p>¿Sabe la ubicación de su cónyuge?</p>
@@ -421,8 +426,8 @@
         </div>
       </div>
       <a href="#" class="reviews__more">Ver todas las opiniones de los clientes</a>
-      <div class="slider__btn slider__btn--prev"><span class="slider__icon--prev"></span></div>
-      <div class="slider__btn slider__btn--next"><span class="slider__icon--next"></span></div>
+      <button class="slider__btn slider__btn--prev"><span class="slider__icon--prev"></span></button>
+      <button class="slider__btn slider__btn--next"><span class="slider__icon--next"></span></button>
     </section>
   </main>
 
@@ -430,12 +435,14 @@
     <section class="footer__menu">
       <img src="./img/logo_white.svg" alt="">
       <nav class="footer__navigation">
-        <h5 class="footer__item"><a href="#">Home</a></h5>
-        <h5 class="footer__item"><a href="#portfolio">Portfolio</a></h5>
-        <h5 class="footer__item"><a href="#">Blog</a></h5>
-        <h5 class="footer__item"><a href="#">Pages</a></h5>
-        <h5 class="footer__item"><a href="#about">About</a></h5>
-        <h5 class="footer__item"><a href="#contact">Contact</a></h5>
+        <h5 class="footer__item"> <a href="#">Cómo funciona</a>
+        </h5>
+        <h5 class="footer__item"><a href="#portfolio">¿Por Qué Nosotros?</a></h5>
+        <h5 class="footer__item"><a href="#">Comentarios</a></h5>
+        <h5 class="footer__item"><a href="#">FAQ</a></h5>
+        <h5 class="footer__item"><a href="#about">Contáctenos</a></h5>
+        <h5 class="footer__item"><a href="#contact">EMPREZAR</a></h5>
+        <h5 class="footer__item"><a href="#contact">Iniciar Sesión</a></h5>
       </nav>
     </section>
     <section class='footer__wrapper'>
@@ -491,9 +498,39 @@
             <li> Divorce in Connecticut</li>
             <li> Divorce in Delaware</li>
           </ul>
+          <ul class="links__lists--item">
+            <li>Divorce in Alabama</li>
+            <li> Divorce in Alaska</li>
+            <li> Divorce in Arizona</li>
+            <li> Divorce in Arkansas</li>
+            <li> Divorce in California</li>
+            <li> Divorce in Colorado</li>
+            <li> Divorce in Connecticut</li>
+            <li> Divorce in Delaware</li>
+          </ul>
+          <ul class="links__lists--item">
+            <li>Divorce in Alabama</li>
+            <li> Divorce in Alaska</li>
+            <li> Divorce in Arizona</li>
+            <li> Divorce in Arkansas</li>
+            <li> Divorce in California</li>
+            <li> Divorce in Colorado</li>
+            <li> Divorce in Connecticut</li>
+            <li> Divorce in Delaware</li>
+          </ul>
+          <ul class="links__lists--item">
+            <li>Divorce in Alabama</li>
+            <li> Divorce in Alaska</li>
+            <li> Divorce in Arizona</li>
+            <li> Divorce in Arkansas</li>
+            <li> Divorce in California</li>
+            <li> Divorce in Colorado</li>
+            <li> Divorce in Connecticut</li>
+            <li> Divorce in Delaware</li>
+          </ul>
         </div>
+        <div class="footer__underline"></div>
       </section>
-      <span class="footer__underline"></span>
       <section class="footer__terms">
         <p class="terms__rule">Mapa del sitio</p>
         <p class="terms__rule">© 2000-2019 Online Divorcio, Todos los derechos reservados</p>
