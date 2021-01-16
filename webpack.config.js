@@ -1,5 +1,7 @@
 const path = require("path");
 const miniCss = require("mini-css-extract-plugin");
+
+var SRC = path.resolve(__dirname, 'src/main/js');
 module.exports = {
   entry: "./src/js/index.js",
   output: {
@@ -7,12 +9,20 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
   },
   module: {
-    rules: [
-      {
-        test: /\.scss$/,
-        use: [miniCss.loader, "css-loader", 'resolve-url-loader', "sass-loader"],
-      },
-    ],
+    rules: [{
+      test: /\.scss$/,
+      use: [
+        miniCss.loader,
+        {
+          loader: "css-loader",
+          options: {
+            url: false
+          }
+        },
+        'resolve-url-loader',
+        "sass-loader"
+      ],
+    }, ],
   },
   plugins: [
     new miniCss({
