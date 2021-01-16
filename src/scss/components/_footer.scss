@@ -62,13 +62,15 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
-    .terms__rule {
-      width: 1230px;
-      margin-bottom: 10px;
-    }
-    .terms__rule:nth-child(3) {
-      margin-bottom: 30px;
-    }
+  
+  }
+
+  &__rule {
+    width: 1230px;
+    margin-bottom: 10px;
+  }
+  &__rule:nth-child(3) {
+    margin-bottom: 30px;
   }
 
   .links__lists {
@@ -78,7 +80,7 @@
     margin-bottom: 20px;
   }
 
-  .links__lists--item {
+  .links__item{
     font-size: 12px;
     line-height: 144%;
     margin-right: 45px;

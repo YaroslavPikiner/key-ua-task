@@ -1,4 +1,6 @@
-var mySwiper = new Swiper('.swiper-container', {
+import '../scss/main.scss';
+
+const mySwiper = new Swiper('.swiper-container', {
   // Optional parameters
 
   direction: 'horizontal',
