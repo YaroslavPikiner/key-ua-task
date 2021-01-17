@@ -22,6 +22,10 @@ const mySwiper = new Swiper('.swiper-container', {
         type: 'bullets',
       },
     },
+    1440: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    }
   },
   // Navigation arrows
   navigation: {

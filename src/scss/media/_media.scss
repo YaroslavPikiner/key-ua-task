@@ -3,7 +3,6 @@
     max-width: 375px;
     font-family: var(--font-primary), var(--font-secondary);
     overflow-x: hidden;
-    border: 1px solid black;
   }
 
   .header {
@@ -121,24 +120,32 @@
 
     .data__input {
       // margin: -20px 140px 100px 180px;
+      margin-left: 20px;
+      width: 315px;
       display: flex;
-      flex-direction: column-reverse;
-      justify-content: center;
-      margin-left: 10px;
+      flex-direction: reverse;
 
-      .data__input--item:nth-child(-n + 2) {
+      .data__input--item:nth-child(n + 3) {
         width: 311px;
         margin-top: 10px;
       }
 
-      .data__input--item:nth-child(n + 3) {
-        width: 109px;
+      .data__input--item:nth-child(1) {
         margin-top: 10px;
+        width: 140px;
+        flex-basis: 44px;
+        flex-shrink: 2;
+      }
+      .data__input--item:nth-child(2) {
+        margin-top: 10px;
+        flex-basis: 44px;
+        width: 140px;
+        flex-shrink: 1;
       }
 
       &--btn {
         margin: 0 auto;
-        width: 311px;
+        width: 300px;
       }
 
       &--description {
@@ -150,6 +157,7 @@
   }
 
   .instruction {
+    margin-bottom: 40px;
     &__list {
       flex-direction: column;
     }
@@ -177,22 +185,31 @@
     width: 375px;
     margin-bottom: 0;
 
+    &__title {
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0.363636px;
+    }
+
     &__wrapper {
       flex-direction: column;
     }
 
     &__img {
       left: 0;
+      padding-top: 20px;
     }
 
     &__list {
-      margin: 210px 160px 0 0;
+      margin: 260px 160px 0 0;
       justify-content: center;
+      align-items: center;
     }
 
     &__item {
       width: 334px;
       padding-left: 20px;
+      margin: 10px 0;
     }
 
     &__title {
@@ -216,6 +233,7 @@
       line-height: 24px;
       font-weight: 700;
       letter-spacing: 0.545455px;
+      margin: 20px 0 15px 0;
     }
 
     &__list {
@@ -251,6 +269,16 @@
       margin-left: 50px;
     }
 
+    &__facts {
+      .facts__text {
+        margin-bottom: 10px;
+      }
+
+      .facts__item {
+        margin: 20px 0;
+      }
+    }
+
     &__rightSide {
       width: 350px;
       border-radius: 18px;
@@ -278,6 +306,7 @@
         font-size: 14px;
         line-height: 19px;
         letter-spacing: 0.545455px;
+        margin: 15px 0 5px 0;
       }
 
       .divorseTool__btn {
@@ -360,11 +389,23 @@
       height: 284px;
     }
 
-    .user__name {
-      width: 100%;
-      font-size: 19px;
-      line-height: 20px;
+    .info__user {
+      .user__name {
+        width: auto;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0.623377px;
+      }
+    }
+
+    .user__date {
+      margin-left: 0;
+      bottom: 25%;
+      right: 75%;
+      font-size: 14px;
+      line-height: 19px;
       letter-spacing: 0.623377px;
+      color: rgba(74, 74, 74, 0.47);;
     }
 
     .user__text {
@@ -372,6 +413,19 @@
       font-size: 13px;
       line-height: 17px;
       letter-spacing: 0.623377px;
+      margin-bottom: 0;
+    }
+
+    .user__rating {
+      margin: -30px 0 10px 70px;
+    }
+
+    .user__verified {
+      margin: 15px 60px 0 0;
+    }
+
+    .icon__verify {
+      right: 65px;
     }
 
     &__more {
@@ -389,6 +443,57 @@
 
     .slider__btn {
       display: none;
+    }
+  }
+
+  .footer {
+    &__navigation {
+      display: none;
+    }
+
+    &__menu {
+      justify-content: start;
+      padding: 15px 0 15px 20px;
+      border-bottom: 1px solid $white;
+    }
+
+    &__wrapper {
+      margin-left: 20px;
+    }
+
+    &__adress {
+      flex-direction: column;
+      .adress__street {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 144%;
+        width: 301px;
+        margin-bottom: 15px;
+      }
+
+      .adress__number {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+      }
+    }
+
+    .links__lists {
+      flex-wrap: wrap;
+    }
+
+    &__rule {
+      width: 332px;
+    }
+
+    &__rule:nth-child(-n + 2) {
+      font-size: 12px;
+      line-height: 144%;
+    }
+
+    &__rule:nth-child(3) {
+      font-size: 10px;
+      line-height: 144%;
     }
   }
 }

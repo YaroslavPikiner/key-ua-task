@@ -183,6 +183,9 @@
 
     .data__input {
       width: 540px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
       &--btn {
         background: $buttonColor;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);

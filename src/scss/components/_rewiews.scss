@@ -1,3 +1,5 @@
+
+
 .reviews {
   display: flex;
   flex-direction: column;
@@ -18,7 +20,7 @@
     margin-bottom: 35px;
   }
   &__item {
-    width: 550px;
+    width: 498px;
     height: 255px;
     background-color: $lightGray;
     mix-blend-mode: normal;
@@ -94,8 +96,8 @@
   }
 
   .user__date {
-    margin-left: 130px;
-    position: relative;
+    position: absolute;
+    right: 60px;
   }
 
   .user__text {
@@ -125,7 +127,7 @@
     width: 10px;
     height: 10px;
     background: url("../src/img/vefiried.svg") no-repeat;
-    margin-right: 65px;
+    right: 60px;
   }
 
   .user__rating {
@@ -146,4 +148,6 @@
   .user__rating > span.active {
     color: $star;
   }
+
+
 }
