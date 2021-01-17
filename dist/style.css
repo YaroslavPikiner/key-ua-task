@@ -1460,7 +1460,8 @@ body {
     justify-content: flex-start;
     position: relative;
   }
-  .header .header__navigation {
+  .header__nav {
+    display: flex;
     position: absolute;
     flex-direction: column;
     justify-content: center;
@@ -1469,6 +1470,12 @@ body {
     bottom: -225px;
     width: 100%;
     transition: all 0.2s;
+  }
+  .header__item {
+    font-size: 14px;
+  }
+  .header__navigation {
+    display: none;
   }
   .header__item {
     margin: 0px 0 0px 20px;

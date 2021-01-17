@@ -39,6 +39,6 @@ const mySwiper = new Swiper(".swiper-container", {
 });
 
 document.querySelector(".header__burger--btn").addEventListener("click", () => {
-  document.querySelector(".header__burger--btn")
+  document.querySelector(".header__nav")
     .classList.toggle("header__navigation");
 });

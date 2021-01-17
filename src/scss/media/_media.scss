@@ -21,7 +21,8 @@
       position: relative;
     }
 
-    .header__navigation {
+    &__nav {
+      display: flex;
       position: absolute;
       flex-direction: column;
       justify-content: center;
@@ -30,6 +31,14 @@
       bottom: -225px;
       width: 100%;
       transition: all .2s;
+    }
+
+    &__item {
+      font-size: 14px;
+    }
+
+    &__navigation {
+      display: none;
     }
 
     &__item {
