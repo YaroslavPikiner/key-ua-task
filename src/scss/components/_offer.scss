@@ -48,23 +48,26 @@
 
   &__priceBlock {
     display: flex;
+    position: relative;
+    bottom: -10px;
   }
 
   &__warranty--header {
-    background: $orange;
+    background: linear-gradient(317.76deg, #FFA600 40.02%, #FF7800 68.68%, #FF6D00 83.15%);
     padding: 20px 30px 20px 40px;
+    position: relative;
+    top: 10px;
   }
 
   &__warranty--price {
-    background: url("../src/img/Fill1.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+    background-color: $violet;
     display: flex;
     flex-direction: row;
     justify-content: start;
     align-items: center;
     width: 536px;
-    height: 100%;
+    height: 59px;
   }
 
   &__warranty--text {
@@ -84,10 +87,10 @@
   }
 
   &__price {
-    background: url("../src/img/small_arrow.png");
-    background-repeat: no-repeat;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    background-color: $violet;
     width: 154px;
-    height: 58px;
+    height: 59px;
     background-size: cover;
     display: flex;
     flex-direction: column;

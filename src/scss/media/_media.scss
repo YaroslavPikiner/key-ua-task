@@ -9,14 +9,112 @@
     position: relative;
     z-index: 99;
     background-color: $white;
-  }
 
-  .header__navigation {
-    display: none;
-  }
+    &__logo {
+      z-index: 0;
+      margin: 0 80px 0 20px;
+    }
 
-  .header__logo {
-    z-index: 0;
+    &__menu {
+      padding: 15px 0;
+      justify-content: flex-start;
+      position: relative;
+    }
+
+    .header__navigation {
+      position: absolute;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      bottom: -225px;
+      width: 100%;
+      transition: all .2s;
+    }
+
+    &__item {
+      margin: 0px 0 0px 20px;
+      width: 120px;
+    }
+
+    &__burger--btn {
+      cursor: pointer;
+      display: block;
+      background: transparent;
+      border-radius: 5px;
+      width: 30px;
+      height: 30px;
+      border: none;
+      outline: none;
+      position: relative;
+      transition: all 0.2s;
+      top: -5px;
+      &:hover {
+        transform: skewY(-5deg);
+      }
+    }
+
+    &__burger--icon {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: url("../src/img/burger.svg") no-repeat;
+      background-size: cover;
+    }
+
+    &__icon {
+      height: 14px;
+      width: 80px;
+      top: 30px;
+      background: linear-gradient(180deg, #9095a4 0%, #575c6b 100%);
+      border-radius: 20px;
+      position: absolute;
+      transition-duration: 0.5s;
+
+      &:before {
+        left: 0;
+        position: absolute;
+        top: -25px;
+        height: 14px;
+        width: 80px;
+        background: linear-gradient(180deg, #9095a4 0%, #575c6b 100%);
+        content: "";
+        border-radius: 20px;
+        transition-duration: 0.5s;
+      }
+
+      &:after {
+        left: 0;
+        position: absolute;
+        top: 25px;
+        height: 14px;
+        width: 80px;
+        background: linear-gradient(180deg, #9095a4 0%, #575c6b 100%);
+        content: "";
+        border-radius: 20px;
+        transition-duration: 0.5s;
+      }
+    }
+
+    &__btn {
+      display: block;
+      background: linear-gradient(179.04deg, #cc2229 -29.81%, #9f041b 129.89%);
+      border-radius: 5px;
+      color: $white;
+      border: none;
+      outline: none;
+      width: 90px;
+      height: 30px;
+      font-size: 10px;
+      line-height: 13px;
+      letter-spacing: 0.519481px;
+      font-weight: 700;
+      margin-top: 5px;
+      transition: all 0.2s;
+      &:hover {
+        transform: scale(0.9);
+      }
+    }
   }
 
   .offer {
@@ -35,7 +133,7 @@
     }
 
     &__features {
-      margin: 50px 0 55px 20px;
+      margin: 50px 0 0 20px;
     }
 
     &__item {
@@ -52,7 +150,7 @@
 
     &__input {
       width: 343px;
-      margin: 50px 0 400px 20px;
+      margin: 0px 0 400px 20px;
     }
 
     &__warranty {
@@ -68,8 +166,7 @@
     }
 
     &__warranty--header {
-      position: absolute;
-      bottom: -60px;
+      top: 95px;
       background: none;
       font-size: 22px;
       line-height: 29px;
@@ -77,6 +174,7 @@
     }
 
     &__warranty--price {
+      height: 31px;
       .warranty {
         font-size: 18.0504px;
         line-height: 27px;
@@ -85,10 +183,10 @@
 
     &__price {
       width: 83px;
-      height: 30px;
+      height: 31px;
 
       .price {
-        margin: 5px 20px 0 50px;
+        margin: 8px 20px 0 50px;
         font-size: 10px;
         line-height: 0;
         letter-spacing: 3px;
@@ -406,7 +504,7 @@
       font-size: 14px;
       line-height: 19px;
       letter-spacing: 0.623377px;
-      color: rgba(74, 74, 74, 0.47);;
+      color: rgba(74, 74, 74, 0.47);
     }
 
     .user__text {

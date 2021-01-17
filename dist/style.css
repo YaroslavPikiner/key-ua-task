@@ -410,11 +410,18 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 .header__logo {
   margin-left: 55px;
   overflow: hidden;
+}
+.header__burger--btn {
+  display: none;
+}
+.header__btn {
+  display: none;
 }
 .header__navigation {
   display: flex;
@@ -441,6 +448,9 @@ body {
   background: #cc2229;
   border-radius: 5px;
   color: #ffffff;
+}
+.header__burger {
+  display: none;
 }
 
 .footer {
@@ -1106,21 +1116,24 @@ body {
 }
 .offer__priceBlock {
   display: flex;
+  position: relative;
+  bottom: -10px;
 }
 .offer__warranty--header {
   background: linear-gradient(317.76deg, #FFA600 40.02%, #FF7800 68.68%, #FF6D00 83.15%);
   padding: 20px 30px 20px 40px;
+  position: relative;
+  top: 10px;
 }
 .offer__warranty--price {
-  background: url("../src/img/Fill1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  clip-path: polygon(100% 0%, 90% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+  background-color: #6e61f5;
   display: flex;
   flex-direction: row;
   justify-content: start;
   align-items: center;
   width: 536px;
-  height: 100%;
+  height: 59px;
 }
 .offer__warranty--text {
   font-size: var(--text-biggest-size);
@@ -1137,10 +1150,10 @@ body {
   line-height: 57px;
 }
 .offer__price {
-  background: url("../src/img/small_arrow.png");
-  background-repeat: no-repeat;
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+  background-color: #6e61f5;
   width: 154px;
-  height: 58px;
+  height: 59px;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -1438,13 +1451,101 @@ body {
     z-index: 99;
     background-color: #ffffff;
   }
-
-  .header__navigation {
-    display: none;
-  }
-
   .header__logo {
     z-index: 0;
+    margin: 0 80px 0 20px;
+  }
+  .header__menu {
+    padding: 15px 0;
+    justify-content: flex-start;
+    position: relative;
+  }
+  .header .header__navigation {
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    bottom: -225px;
+    width: 100%;
+    transition: all 0.2s;
+  }
+  .header__item {
+    margin: 0px 0 0px 20px;
+    width: 120px;
+  }
+  .header__burger--btn {
+    cursor: pointer;
+    display: block;
+    background: transparent;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    position: relative;
+    transition: all 0.2s;
+    top: -5px;
+  }
+  .header__burger--btn:hover {
+    transform: skewY(-5deg);
+  }
+  .header__burger--icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url("../src/img/burger.svg") no-repeat;
+    background-size: cover;
+  }
+  .header__icon {
+    height: 14px;
+    width: 80px;
+    top: 30px;
+    background: linear-gradient(180deg, #9095a4 0%, #575c6b 100%);
+    border-radius: 20px;
+    position: absolute;
+    transition-duration: 0.5s;
+  }
+  .header__icon:before {
+    left: 0;
+    position: absolute;
+    top: -25px;
+    height: 14px;
+    width: 80px;
+    background: linear-gradient(180deg, #9095a4 0%, #575c6b 100%);
+    content: "";
+    border-radius: 20px;
+    transition-duration: 0.5s;
+  }
+  .header__icon:after {
+    left: 0;
+    position: absolute;
+    top: 25px;
+    height: 14px;
+    width: 80px;
+    background: linear-gradient(180deg, #9095a4 0%, #575c6b 100%);
+    content: "";
+    border-radius: 20px;
+    transition-duration: 0.5s;
+  }
+  .header__btn {
+    display: block;
+    background: linear-gradient(179.04deg, #cc2229 -29.81%, #9f041b 129.89%);
+    border-radius: 5px;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    width: 90px;
+    height: 30px;
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: 0.519481px;
+    font-weight: 700;
+    margin-top: 5px;
+    transition: all 0.2s;
+  }
+  .header__btn:hover {
+    transform: scale(0.9);
   }
 
   .offer__img {
@@ -1460,7 +1561,7 @@ body {
     height: auto;
   }
   .offer__features {
-    margin: 50px 0 55px 20px;
+    margin: 50px 0 0 20px;
   }
   .offer__item {
     margin-top: 25px;
@@ -1474,7 +1575,7 @@ body {
   }
   .offer__input {
     width: 343px;
-    margin: 50px 0 400px 20px;
+    margin: 0px 0 400px 20px;
   }
   .offer__warranty {
     position: relative;
@@ -1487,12 +1588,14 @@ body {
     letter-spacing: 0.0947368px;
   }
   .offer__warranty--header {
-    position: absolute;
-    bottom: -60px;
+    top: 95px;
     background: none;
     font-size: 22px;
     line-height: 29px;
     font-weight: 700;
+  }
+  .offer__warranty--price {
+    height: 31px;
   }
   .offer__warranty--price .warranty {
     font-size: 18.0504px;
@@ -1500,10 +1603,10 @@ body {
   }
   .offer__price {
     width: 83px;
-    height: 30px;
+    height: 31px;
   }
   .offer__price .price {
-    margin: 5px 20px 0 50px;
+    margin: 8px 20px 0 50px;
     font-size: 10px;
     line-height: 0;
     letter-spacing: 3px;
