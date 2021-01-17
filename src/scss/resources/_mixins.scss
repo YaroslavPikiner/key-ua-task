@@ -1,4 +1,4 @@
-@mixin arrowStyle($way, $top, $right) {
+@mixin arrowStyleRight($way, $top, $right) {
   position: absolute;
   width: 14px;
   height: 12px;
@@ -8,9 +8,20 @@
   background-size: cover;
 }
 
-@mixin border($bgc) {
-  width: 78px;
-  height: 78px;
+@mixin arrowStyleDown($way, $top, $right) {
+  position: absolute;
+  width: 14px;
+  height: 12px;
+  top: $top;
+  right: $right;
+  background: url($way);
+  background-size: cover;
+  transform: rotate(90deg);
+}
+
+@mixin border($bgc,$w,$h) {
+  width: $w;
+  height: $h;
   position: relative;
   border-radius: 50%;
   background: $bgc;

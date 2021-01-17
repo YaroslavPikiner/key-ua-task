@@ -4,8 +4,7 @@
     font-weight: 700;
     font-size: var(--text-head-size);
     line-height: 48px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     letter-spacing: 0.545455px;
     color: $darkGray;
     margin-bottom: 46px;
@@ -24,7 +23,7 @@
 
   &__facts {
     .facts__title {
-      font-weight: bold;
+      font-weight: 700;
       font-size: var(--text-subhead-size);
       line-height: 32px;
       letter-spacing: 0.545455px;
@@ -61,7 +60,7 @@
       height: 20px;
       left: 0;
       top: 0;
-      background: url("../img/danger.svg") center 0 no-repeat;
+      background: url("../src/img/danger.svg") center 0 no-repeat;
     }
   }
 
@@ -70,7 +69,6 @@
     box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.238338);
     border-radius: 5px;
     width: 470px;
-    height: 730px;
     color: $white;
     position: relative;
 
@@ -87,7 +85,7 @@
     }
 
     .divorseTool__title {
-      font-weight: bold;
+      font-weight: 700;
       width: 320px;
       font-size: var(--text-subhead-size);
       line-height: 32px;
@@ -102,51 +100,13 @@
       letter-spacing: 0.484848px;
     }
 
-    .benefits__company {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      color: #000;
-      position: relative;
-      bottom: -80px;
-    }
-
-    .benefits__item--trust {
-      background: url("../../img/truste_logo.svg") no-repeat center;
-      background-size: cover;
-      width: 89px;
-      height: 51px;
-      margin-right: 20px;
-    }
-    .benefits__item--norton {
-      background: url("../../img/godaddy_logo.svg") no-repeat center;
-      background-size: cover;
-      width: 89px;
-      height: 51px;
-      margin-right: 20px;
-    }
-    .benefits__item--mcafee {
-      background: url("../../img/mcafee.svg") no-repeat center;
-      background-size: cover;
-      width: 89px;
-      height: 51px;
-      margin-right: 20px;
-    }
-    .benefits__item--godaddy {
-      background: url("../../img/godaddy_logo1.svg") no-repeat center;
-      background-size: cover;
-      width: 89px;
-      height: 51px;
-      margin-right: 20px;
-    }
-
     .divorseTool__item {
       position: relative;
       font-size: var(--text-base-size);
       font-size: 16px;
       line-height: 21px;
       letter-spacing: 0.545455px;
-      margin: 25px 0 20px 0;
+      margin: 25px 0 5px 0;
       padding-left: 45px;
     }
 
@@ -157,7 +117,7 @@
       height: 20px;
       left: 0;
       top: 0;
-      background: url("../img/check-circle.svg") center 0 no-repeat;
+      background: url("../src/img/check-circle.svg") center 0 no-repeat;
     }
 
     .divorseTool__btn {
@@ -183,10 +143,48 @@
       position: absolute;
       width: 20px;
       height: 8px;
-      background: url("../img/sort-1_copy.svg") no-repeat;
+      background: url("../src/img/sort-1_copy.svg") no-repeat;
       background-size: cover;
       right: 10px;
       top: 45%;
     }
+  }
+
+  &__company {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: -140px;
+  }
+
+  &__item {
+    background-size: cover;
+    margin: 0 13px;
+  }
+
+  &__item--trust {
+    background: url("../src/img/truste-logo.svg") no-repeat center;
+    width: 42px;
+    height: 27px;
+  }
+
+  &__item--norton {
+    background: url("../src/img/norton.svg") no-repeat center;
+    width: 64px;
+    height: 26px;
+  }
+
+  &__item--mcafee {
+    background: url("../src/img/mcafee.svg") no-repeat center;
+    width: 65px;
+    height: 19px;
+  }
+
+  &__item--godaddy {
+    background: url("../src/img/godaddy_logo.svg") no-repeat center;
+    width: 85px;
+    height: 20px;
   }
 }

@@ -1,4 +1,4 @@
-import '../scss/main.scss';
+import '../scss/main.scss'
 
 const mySwiper = new Swiper('.swiper-container', {
   // Optional parameters
@@ -12,7 +12,17 @@ const mySwiper = new Swiper('.swiper-container', {
   pagination: {
     el: '.swiper-pagination',
   },
-
+  breakpoints: {
+    // when window width is >= 375px
+    374: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+    },
+  },
   // Navigation arrows
   navigation: {
     nextEl: '.slider__btn--next',

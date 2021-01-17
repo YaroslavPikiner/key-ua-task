@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel='stylesheet' href='dist/style.css'>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
@@ -15,7 +15,7 @@
 <body>
   <header class="header">
     <section class="header__menu">
-      <img src="./img/Group 52.svg" alt="header__logo" class="header__logo">
+      <img src="./src/img/Group 52.svg" alt="header__logo" class="header__logo">
       <nav class="header__navigation">
         <h5 class="header__item"><a href="#">Cómo funciona</a></h5>
         <h5 class="header__item"><a href="#portfolio">¿Por Qué Nosotros?</a></h5>
@@ -32,8 +32,8 @@
       <h1 class="offer__title">Comience Su Divorcio Online Sin Honorarios de Abogados</h1>
 
       <picture class='offer__img'>
-        <source media="(max-width:400px)" srcset="./img/maria-ballesteros-531264-unsplash.png">
-        <img src="./img/divorse_bg.png " style="width:auto;" alt="Woman">
+        <source media="(max-width:768px)" srcset="./src/img/maria-ballesteros-531264-unsplash.png">
+        <img src="./src/img/divorse_bg.png" style="width:auto;" alt="Woman">
       </picture>
 
       <ul class="offer__features">
@@ -61,20 +61,23 @@
         </li>
       </ul>
       <div class="offer__input">
+
         <div class="offer__warranty">
-          <div class="offer__warranty--wrapper">
+          <div class="offer__warranty--header">
             <h4>Vea si califica</h4>
           </div>
-          <div class="offer__warranty--wrapper">
-            <h2 class="warranty">100%|</h2>
-            <div class="offer__warranty--text">
-              <p>DE GARANTÍA DE APROBACIÓN EN </p>
-              <p>EL TRIBUNAL o le devolvemos su dinero</p>
+          <div class="offer__priceBlock">
+            <div class="offer__warranty--price">
+              <h2 class="warranty">100%|</h2>
+              <div class="offer__warranty--text">
+                <p>DE GARANTÍA DE APROBACIÓN EN </p>
+                <p>EL TRIBUNAL o le devolvemos su dinero</p>
+              </div>
             </div>
-          </div>
-          <div class="offer__price">
-            <span class="price">139$</span>
-            <span class="text">best price</span>
+            <div class="offer__price">
+              <span class="price">139$</span>
+              <span class="text">best price</span>
+            </div>
           </div>
         </div>
         <div class="offer__data">
@@ -96,17 +99,17 @@
               </div>
             </div>
             <div class="data__input">
-              <input class="data__input--item data__input--sort" type="number" placeholder="Seleccione su estado">
-              <input class="data__input--item " type="text" placeholder="Seleccione su estado">
-              <input class="data__input--item" type="email" placeholder="Ingrese su email">
+              <input class="data__input--item data__input--sort" type="number" placeholder="Nombre">
               <input class="data__input--item" type="text" placeholder="Apellido">
+              <input class="data__input--item" type="email" placeholder="Ingrese su email">
+              <input class="data__input--item" type="text" placeholder="Seleccione su estado ">
               <button type='submit' class="data__input--btn">Verificar elegibilidad
                 <span class="data__input--icon"></span>
               </button>
-              <span class="data__input--description">Al hacer clic en “Verificar Elegibilidad”, usted acepta los
-                Términos y Condiciones
+              <span class="data__input--description">By clicking "Continue" you agree to the Terms & Conditions
               </span>
             </div>
+
           </form>
         </div>
       </div>
@@ -153,30 +156,38 @@
     </section>
 
     <section class="advantages">
-      <div class="advantages__leftSide">
-        <img class='advantages__img' src="./img/Group 73.png" alt="">
-      </div>
-      <div class="advantages__rightSide">
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <h3 class="advantages__title">Barato y conveniente</h3>
-            <p class="advantages__text">Nuestro proceso simple y económico le permitirá completar sus documentos de
-              divorcio desde la comodidad de su hogar, sin incurrir en el costo de un abogado o lidiar con una larga
-              finalización</p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">Profesional y con experiencia</h3>
-            <p class="advantages__text">Somos uno de los principales proveedores de divorcios en línea en los Estados
-              Unidos y Canadá. Hacemos que el divorcio sea fácil porque nuestro proceso garantiza que sus documentos
-              esten hechos correctamente. No hay necesidad de buscar formularios o leer instrucciones largas y confusas
-            </p>
-          </li>
-          <li class="advantages__item">
-            <h3 class="advantages__title">100% aprobado por el tribunal</h3>
-            <p class="advantages__text">Sin espera. Nuestro servicio de preparación de divorcios con todo incluido está
-              garantizado para proporcionarle formularios aceptados por el tribunal actualizados y completos</p>
-          </li>
-        </ul>
+      <h3 class="advantages__head">Obtenga un divorcio en línea fácil</h3>
+      <div class="advantages__wrapper">
+        <div class="advantages__leftSide">
+          <picture class='advantages__img'>
+            <source media="(max-width:768px)" srcset="./src/img/Group_small.png">
+            <img src="/src/img/Rectangle 5 Copy 2.1 (1).png" style="width:auto;" alt="Woman">
+          </picture>
+        </div>
+        <div class="advantages__rightSide">
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <h3 class="advantages__title">Barato y conveniente</h3>
+              <p class="advantages__text">Nuestro proceso simple y económico le permitirá completar sus documentos de
+                divorcio desde la comodidad de su hogar, sin incurrir en el costo de un abogado o lidiar con una larga
+                finalización</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Profesional y con experiencia</h3>
+              <p class="advantages__text">Somos uno de los principales proveedores de divorcios en línea en los Estados
+                Unidos y Canadá. Hacemos que el divorcio sea fácil porque nuestro proceso garantiza que sus documentos
+                esten hechos correctamente. No hay necesidad de buscar formularios o leer instrucciones largas y
+                confusas
+              </p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">100% aprobado por el tribunal</h3>
+              <p class="advantages__text">Sin espera. Nuestro servicio de preparación de divorcios con todo incluido
+                está
+                garantizado para proporcionarle formularios aceptados por el tribunal actualizados y completos</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="news">
@@ -261,7 +272,7 @@
         </div>
         <div class="benefits__rightSide">
           <div class="divorseTool">
-            <img class="divorseTool__image" src="./img/logo_white.svg" alt="">
+            <img class="divorseTool__image" src="./src/img/logo_white.svg" alt="">
             <h2 class="divorseTool__title">La principal herramienta de divorcio disputado</h2>
             <p class="divorseTool__text">Proceso totalmente guiado, rápido y económico. Servicio de divorcio en línea
               experimentado y confiable que utiliza tecnología de primer nivel
@@ -294,15 +305,15 @@
                 </h5>
               </li>
             </ul>
-            <button type='submit' class="divorseTool__btn">Comience ahora por solo $139 dólares
+            <button type='submit' class="divorseTool__btn">Start now for just 139$
               <span class="divorseTool__btnIcon"></span>
             </button>
           </div>
           <div class="benefits__company">
-            <span class="benefits__item--trust"></span>
-            <span class="benefits__item--norton"></span>
-            <span class="benefits__item--mcafee"></span>
-            <span class="benefits__item--godaddy"></span>
+            <span class="benefits__item benefits__item--trust"></span>
+            <span class="benefits__item benefits__item--norton"></span>
+            <span class="benefits__item benefits__item--mcafee"></span>
+            <span class="benefits__item benefits__item--godaddy"></span>
           </div>
         </div>
       </div>
@@ -404,7 +415,7 @@
           <div class="reviews__item swiper-slide">
             <div class="item__info">
               <div class="info__user">
-                <img class="user__photo" src="./img/Ellipse 1.png" alt="">
+                <img class="user__photo" src="./src/img/Ellipse 1.png" alt="">
                 <h4 class="user__name">Kilpatrick B., Ontariasdo</h4>
                 <p class="user__date">Aug 2018</p>
               </div>
@@ -424,6 +435,7 @@
             </div>
           </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
       <a href="#" class="reviews__more">Ver todas las opiniones de los clientes</a>
       <button class="slider__btn slider__btn--prev"><span class="slider__icon--prev"></span></button>
@@ -433,7 +445,7 @@
 
   <footer class="footer">
     <section class="footer__menu">
-      <img src="./img/logo_white.svg" alt="">
+      <img src="./src/img/logo_white.svg" alt="">
       <nav class="footer__navigation">
         <h5 class="footer__item"> <a href="#">Cómo funciona</a>
         </h5>

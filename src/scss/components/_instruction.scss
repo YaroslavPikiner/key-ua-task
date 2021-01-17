@@ -3,11 +3,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 70px;
+  margin-bottom: 132px;
   &__title {
     font-size: var(--text-head-size);
     color: $colorHeading;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 48px;
     letter-spacing: 0.545455px;
     margin-bottom: 55px;
@@ -25,19 +25,19 @@
   }
 
   &__bg--ligthGray {
-    @include border($lightGray);
+    @include border($lightGray, 78px, 78px);
   }
 
   &__bg--gray {
-    @include border($gray);
+    @include border($gray, 78px, 78px);
   }
 
   &__bg--yellow {
-    @include border($yellow);
+    @include border($yellow, 78px, 78px);
   }
 
   &__bg--orange {
-    @include border($orange);
+    @include border($orange, 78px, 78px);
   }
 
   &__icon {
@@ -47,19 +47,19 @@
   }
 
   &__icon--profile {
-    @include icon("../img/Fill-49.svg");
+    @include icon("../src/img/Fill-49.svg");
   }
 
   &__icon--document {
-    @include icon("../img/Fill-7.svg");
+    @include icon("../src/img/Fill-7.svg");
   }
 
   &__icon--search {
-    @include icon("../img/Fill-6.svg");
+    @include icon("../src/img/Fill-6.svg");
   }
 
   &__icon--finish {
-    @include icon("../img/Fill-11.svg");
+    @include icon("../src/img/Fill-11.svg");
   }
 
   &__text {
@@ -73,16 +73,16 @@
   }
 
   &__arrow {
-    margin: 0 90px 0 70px;
+    margin: 90px 0 70px 0;
   }
 
   &__arrow--orange {
-    @include arrowStyle("../img/Combined_Shape_3.svg", 35%, 15%);
+    @include arrowStyleRight("../src/img/Combined_Shape_3.svg", -30%, 25%);
   }
   &__arrow--yellow {
-    @include arrowStyle("../img/Combined_Shape_2.svg", 35%, 40%);
+    @include arrowStyleRight("../src/img/Combined_Shape_2.svg", -30%, 50%);
   }
   &__arrow--gray {
-    @include arrowStyle("../img/Combined_Shape.svg", 35%, 66%);
+    @include arrowStyleRight("../src/img/Combined_Shape.svg", -30%, 75%);
   }
 }

@@ -8,6 +8,7 @@
     font-size: 54px;
     line-height: 72px;
     letter-spacing: 0.818182px;
+    color: $darkGray;
   }
 
   &__img {
@@ -23,8 +24,6 @@
 
   &__item {
     position: relative;
-    font-size: 15px;
-    color: #000;
     margin-top: 25px;
     padding-left: 45px;
   }
@@ -36,7 +35,7 @@
     height: 20px;
     left: 0;
     top: 0;
-    background: url("../img/flag.svg") center 0 no-repeat;
+    background: url("../src/img/flag.svg") center 0 no-repeat;
   }
 
   &__text {
@@ -47,16 +46,21 @@
     color: $darkGray;
   }
 
-  &__warranty--wrapper:nth-child(1) {
+  &__priceBlock {
+    display: flex;
+  }
+
+  &__warranty--header {
     background: $orange;
     padding: 20px 30px 20px 40px;
   }
 
-  &__warranty--wrapper:nth-child(2) {
-    background: url("../img/Fill1.png");
+  &__warranty--price {
+    background: url("../src/img/Fill1.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    flex-direction: row;
     justify-content: start;
     align-items: center;
     width: 536px;
@@ -72,8 +76,7 @@
   &__warranty {
     display: flex;
     flex-direction: row;
-    align-items: center;
-   
+    justify-content: start;
     .warranty {
       font-size: 43.0504px;
       line-height: 57px;
@@ -81,7 +84,7 @@
   }
 
   &__price {
-    background: url("../img/small_arrow.png");
+    background: url("../src/img/small_arrow.png");
     background-repeat: no-repeat;
     width: 154px;
     height: 58px;
@@ -90,7 +93,6 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    margin-left: 0px;
 
     .price {
       margin: 10px 20px 0 50px;
@@ -101,6 +103,7 @@
     .text {
       font-size: var(--text-base-size);
       margin: 0 20px 0 50px;
+      text-transform: uppercase;
     }
   }
 
@@ -179,7 +182,7 @@
     }
 
     .data__input {
-      max-width: 540px;
+      width: 540px;
       &--btn {
         background: $buttonColor;
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
@@ -202,7 +205,7 @@
         position: absolute;
         width: 20px;
         height: 8px;
-        background: url("../img/sort-1_copy.svg") no-repeat;
+        background: url("../src/img/sort-1_copy.svg") no-repeat;
         background-size: cover;
         right: 10px;
         top: 45%;
@@ -229,7 +232,7 @@
 
     .data__input--sort::-webkit-inner-spin-button {
       -webkit-appearance: none;
-      background: url("/img/sort-1.svg");
+      background: url("../src/img/sort-1.svg");
       width: 15px;
       height: 15px;
       background-size: cover;

@@ -1,12 +1,9 @@
-@media screen and (min-width: 376px) and (max-width: 768px) {
+@media screen and (min-width: 374px) and (max-width: 768px) {
   body {
-    width: 375px;
+    max-width: 375px;
     font-family: var(--font-primary), var(--font-secondary);
     overflow-x: hidden;
-  }
-  
-  .offer {
-    z-index: 9;
+    border: 1px solid black;
   }
 
   .header {
@@ -23,12 +20,375 @@
     z-index: 0;
   }
 
-  .offer__img {
-    top: -150px;
-    z-index: 1;
+  .offer {
+    &__img {
+      top: -105px;
+      z-index: 1;
+    }
+
+    &__title {
+      margin: 40px 0 0 20px;
+      font-size: var(--text-subhead-size);
+      line-height: 32px;
+      letter-spacing: 0.363636px;
+      width: 184px;
+      height: auto;
+    }
+
+    &__features {
+      margin: 50px 0 55px 20px;
+    }
+
+    &__item {
+      margin-top: 25px;
+      padding-left: 45px;
+    }
+
+    &__text {
+      width: 220px;
+      font-size: 14px;
+      line-height: 19px;
+      letter-spacing: 0.565656px;
+    }
+
+    &__input {
+      width: 343px;
+      margin: 50px 0 400px 20px;
+    }
+
+    &__warranty {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__warranty--text {
+      font-size: 10px;
+      line-height: 12px;
+      letter-spacing: 0.0947368px;
+    }
+
+    &__warranty--header {
+      position: absolute;
+      bottom: -60px;
+      background: none;
+      font-size: 22px;
+      line-height: 29px;
+      font-weight: 700;
+    }
+
+    &__warranty--price {
+      .warranty {
+        font-size: 18.0504px;
+        line-height: 27px;
+      }
+    }
+
+    &__price {
+      width: 83px;
+      height: 30px;
+
+      .price {
+        margin: 5px 20px 0 50px;
+        font-size: 10px;
+        line-height: 0;
+        letter-spacing: 3px;
+      }
+
+      .text {
+        font-size: 11px;
+        margin: 8px 5px 0 50px;
+        display: inline-block;
+        width: 80px;
+      }
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-top: 10px;
+
+      .checkbox__item > p {
+        font-size: 14px;
+        line-height: 19px;
+      }
+    }
+
+    .checkbox__item {
+      margin-bottom: 15px;
+    }
+
+    .data__input {
+      // margin: -20px 140px 100px 180px;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      margin-left: 10px;
+
+      .data__input--item:nth-child(-n + 2) {
+        width: 311px;
+        margin-top: 10px;
+      }
+
+      .data__input--item:nth-child(n + 3) {
+        width: 109px;
+        margin-top: 10px;
+      }
+
+      &--btn {
+        margin: 0 auto;
+        width: 311px;
+      }
+
+      &--description {
+        font-size: 10px;
+        letter-spacing: 0;
+        margin-top: 5px;
+      }
+    }
   }
 
-  $transition-duration: 0.5s;
-  // Отображение пунктов навигации в виде линий, составляющих иконку гамбургера
-  
+  .instruction {
+    &__list {
+      flex-direction: column;
+    }
+
+    &__item:first-of-type {
+      margin-top: 0;
+    }
+
+    &__item {
+      margin: 60px 0 0 0;
+    }
+
+    &__arrow--orange {
+      @include arrowStyleDown("../src/img/Combined_Shape_3.svg", 65%, 50%);
+    }
+    &__arrow--yellow {
+      @include arrowStyleDown("../src/img/Combined_Shape_2.svg", 37%, 50%);
+    }
+    &__arrow--gray {
+      @include arrowStyleDown("../src/img/Combined_Shape.svg", 9%, 50%);
+    }
+  }
+
+  .advantages {
+    width: 375px;
+    margin-bottom: 0;
+
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__img {
+      left: 0;
+    }
+
+    &__list {
+      margin: 210px 160px 0 0;
+      justify-content: center;
+    }
+
+    &__item {
+      width: 334px;
+      padding-left: 20px;
+    }
+
+    &__title {
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0.545455px;
+      font-weight: 700;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 19px;
+      letter-spacing: 0.545455px;
+    }
+  }
+
+  .news {
+    margin: 0;
+    &__title {
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: 700;
+      letter-spacing: 0.545455px;
+    }
+
+    &__list {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 2vw;
+    }
+
+    &__item {
+      margin: 0;
+      width: 100px;
+      height: 50px;
+    }
+  }
+
+  .benefits {
+    margin-top: 45px;
+    &__title {
+      font-size: 22px;
+      line-height: 29px;
+      letter-spacing: 0.363636px;
+    }
+
+    &__wrapper {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__leftSide {
+      width: 342px;
+      margin-left: 50px;
+    }
+
+    &__rightSide {
+      width: 350px;
+      border-radius: 18px;
+      background: linear-gradient(
+        180deg,
+        #ffa700 0%,
+        #ff7a00 46.38%,
+        #ff6e00 100%
+      );
+
+      .divorseTool__title {
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.409091px;
+        font-weight: 700;
+      }
+
+      .divorseTool__text {
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.424242px;
+      }
+
+      .divorseTool__item {
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.545455px;
+      }
+
+      .divorseTool__btn {
+        width: 311px;
+        margin-top: 15px;
+      }
+      .divorseTool__btnIcon {
+        background: none;
+      }
+    }
+
+    &__company {
+      bottom: -50px;
+    }
+
+    &__item {
+      margin: 0 6px;
+    }
+  }
+
+  .commitment {
+    &__title {
+      margin: 37px 0 22px 0;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.363636px;
+    }
+
+    &__text {
+      display: none;
+    }
+
+    &__bg--ligthGray {
+      @include border($lightGray, 42px, 42px);
+    }
+
+    &__bg--gray {
+      @include border($gray, 42px, 42px);
+    }
+
+    &__bg--yellow {
+      @include border($yellow, 42px, 42px);
+    }
+
+    &__bg--orange {
+      @include border($orange, 42px, 42px);
+    }
+
+    &__icon {
+      position: absolute;
+      width: 42px;
+      height: 42px;
+    }
+
+    &__item {
+      .item__title,
+      .item__text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.424242px;
+      }
+    }
+  }
+
+  .reviews {
+    &__title {
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0.545455px;
+      margin-bottom: 20px;
+    }
+
+    &__container {
+      margin-bottom: 25px;
+    }
+
+    &__item {
+      width: 340px;
+      height: 284px;
+    }
+
+    .user__name {
+      width: 100%;
+      font-size: 19px;
+      line-height: 20px;
+      letter-spacing: 0.623377px;
+    }
+
+    .user__text {
+      width: 295px;
+      font-size: 13px;
+      line-height: 17px;
+      letter-spacing: 0.623377px;
+    }
+
+    &__more {
+      display: none;
+    }
+
+    .swiper-container {
+      width: 343px;
+      height: 284px;
+    }
+
+    .swiper-pagination {
+      display: block;
+    }
+
+    .slider__btn {
+      display: none;
+    }
+  }
 }

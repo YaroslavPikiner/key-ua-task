@@ -1,13 +1,27 @@
 .advantages {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  position: relative;
   margin-bottom: 40px;
+
+  &__wrapper { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  &__head {
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 700;
+    letter-spacing: 0.545455px;
+    color: $darkGray;
+    text-align: center;
+  }
 
   &__img {
     position: absolute;
     left: 6%;
+    top: -17%;
   }
 
   &__list {
@@ -15,7 +29,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 115px 160px 0 0;
+    margin: 35px 160px 0 0;
   }
 
   &__item {
@@ -24,8 +38,8 @@
   }
 
   &__title {
-    font-weight: bold;
     font-size: 24px;
+    font-weight: 700;
     line-height: 32px;
     letter-spacing: 0.545455px;
     margin-bottom: 15px;

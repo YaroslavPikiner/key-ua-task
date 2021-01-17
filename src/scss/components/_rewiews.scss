@@ -6,7 +6,7 @@
   position: relative;
 
   &__title {
-    font-weight: bold;
+    font-weight: 700;
     font-size: var(--text-head-size);
     line-height: 48px;
     letter-spacing: 0.545455px;
@@ -34,7 +34,7 @@
   }
 
   &__more {
-    font-weight: bold;
+    font-weight: 700;
     font-size: var(--text-base-size);
     line-height: 21px;
     letter-spacing: 0.545455px;
@@ -45,6 +45,10 @@
   .swiper-container {
     width: 1066px;
     height: 255px;
+  }
+
+  .swiper-pagination {
+    display: none;
   }
 
   .slider__btn {
@@ -60,7 +64,7 @@
   }
 
   .slider__btn--prev {
-    background: url("../img/chevron-right.svg") no-repeat center;
+    background: url("../src/img/chevron-right.svg") no-repeat center;
     background-size: cover;
     transform: rotate(180deg);
     left: 150px;
@@ -68,7 +72,7 @@
   }
 
   .slider__btn--next {
-    background: url("../img/chevron-right.svg") no-repeat center;
+    background: url("../src/img/chevron-right.svg") no-repeat center;
     background-size: cover;
     right: 150px;
     top: 45%;
@@ -82,7 +86,7 @@
   }
 
   .user__name {
-    font-weight: bold;
+    font-weight: 700;
     font-size: var(--text-biggest-size);
     line-height: 24px;
     color: $darkGray;
@@ -120,7 +124,7 @@
     position: absolute;
     width: 10px;
     height: 10px;
-    background: url("../img/vefiried.svg") no-repeat;
+    background: url("../src/img/vefiried.svg") no-repeat;
     margin-right: 65px;
   }
 

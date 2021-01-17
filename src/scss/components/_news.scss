@@ -7,11 +7,9 @@
   margin-bottom: 100px;
 
   &__title {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 28px;
     line-height: 37px;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.545455px;
     color: $darkGray;
     margin: 33px 0 15px 0;
@@ -20,7 +18,7 @@
   &__list {
     display: flex;
     flex-direction: row;
-    text-align: center;
+    justify-content: center;
     margin-bottom: 45px;
   }
 
@@ -32,21 +30,21 @@
   }
 
   &__item--nbc {
-    @include tvIcon("../img/news__logo/NBC_logo.svg");
+    @include tvIcon("../src/img/news__logo/NBC_logo.svg");
   }
   &__item--gma {
-    @include tvIcon("../img/news__logo/good_morning_logo.svg");
+    @include tvIcon("../src/img/news__logo/good_morning_logo.svg");
   }
   &__item--abc {
-    @include tvIcon("../img/news__logo/fill-3.svg");
+    @include tvIcon("../src/img/news__logo/fill-3.svg");
   }
   &__item--cbs {
-    @include tvIcon("../img/news__logo/CBS_logo.svg");
+    @include tvIcon("../src/img/news__logo/CBS_logo.svg");
   }
   &__item--time {
-    @include tvIcon("../img/news__logo/time_logo.svg");
+    @include tvIcon("../src/img/news__logo/time_logo.svg");
   }
   &__item--usa {
-    @include tvIcon("../img/news__logo/usa_today_logo.svg");
+    @include tvIcon("../src/img/news__logo/usa_today_logo.svg");
   }
 }
