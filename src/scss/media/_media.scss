@@ -373,6 +373,7 @@
   }
 
   .reviews {
+    margin-bottom: 40px;
     &__title {
       font-size: 24px;
       line-height: 32px;
@@ -439,6 +440,14 @@
 
     .swiper-pagination {
       display: block;
+      position: absolute;
+      width: 200px;
+      height: 25px;
+      bottom: -20px;
+    }
+
+    .swiper-pagination-bullet {
+      margin: 0 10px;
     }
 
     .slider__btn {

@@ -1779,6 +1779,9 @@ body {
     letter-spacing: 0.424242px;
   }
 
+  .reviews {
+    margin-bottom: 40px;
+  }
   .reviews__title {
     font-size: 24px;
     line-height: 32px;
@@ -1832,6 +1835,13 @@ body {
   }
   .reviews .swiper-pagination {
     display: block;
+    position: absolute;
+    width: 200px;
+    height: 25px;
+    bottom: -20px;
+  }
+  .reviews .swiper-pagination-bullet {
+    margin: 0 10px;
   }
   .reviews .slider__btn {
     display: none;
