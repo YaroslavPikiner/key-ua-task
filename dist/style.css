@@ -606,6 +606,7 @@ body {
 .benefits__leftSide {
   width: 570px;
   margin-right: 50px;
+  background: url("../src/img/rawpixel-592442-unsplash.png");
 }
 .benefits__facts .facts__title {
   font-weight: 700;
@@ -1803,6 +1804,7 @@ body {
   .benefits__leftSide {
     width: 342px;
     margin-left: 50px;
+    background: none;
   }
   .benefits__facts .facts__text {
     margin-bottom: 10px;
