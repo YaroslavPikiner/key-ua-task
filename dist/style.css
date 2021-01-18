@@ -531,15 +531,22 @@ body {
   margin-right: 45px;
 }
 
-.advantages {
-  margin-bottom: 40px;
-}
 .advantages__wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
+  margin-bottom: 100px;
+}
+.advantages__leftSide {
+  position: relative;
+  background-image: url("../src/img/bg_advantages.png");
+  background-size: cover;
+  width: 588px;
+  height: 518px;
+  top: 80px;
+  right: -135px;
 }
 .advantages__head {
   font-size: 36px;
@@ -550,9 +557,9 @@ body {
   text-align: center;
 }
 .advantages__img {
-  position: absolute;
-  left: 6%;
-  top: -17%;
+  position: relative;
+  left: -8%;
+  top: -24%;
 }
 .advantages__list {
   display: flex;
@@ -570,7 +577,6 @@ body {
   font-weight: 700;
   line-height: 32px;
   letter-spacing: 0.545455px;
-  margin-bottom: 15px;
   color: #FF6E00;
 }
 .advantages__text {
@@ -664,7 +670,7 @@ body {
   line-height: 32px;
   text-align: center;
   letter-spacing: 0.545455px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .benefits__rightSide .divorseTool__text {
   font-size: var(--text-base-size);
@@ -677,7 +683,7 @@ body {
   font-size: 16px;
   line-height: 21px;
   letter-spacing: 0.545455px;
-  margin: 25px 0 5px 0;
+  margin: 30px 0 5px 0;
   padding-left: 45px;
 }
 .benefits__rightSide .divorseTool__icon::before {
@@ -703,6 +709,7 @@ body {
   outline: none;
   position: relative;
   transition: all 0.2s;
+  margin-top: 30px;
 }
 .benefits__rightSide .divorseTool__btn:hover {
   transform: scale(0.9);
@@ -719,14 +726,14 @@ body {
 .benefits__company {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
-  position: relative;
-  bottom: -140px;
+  position: absolute;
+  bottom: -60px;
+  margin-left: 40px;
 }
 .benefits__item {
   background-size: cover;
-  margin: 0 13px;
+  margin: 0 20px;
 }
 .benefits__item--trust {
   background: url("../src/img/truste-logo.svg") no-repeat center;
@@ -1716,27 +1723,28 @@ body {
     width: 375px;
     margin-bottom: 0;
   }
-  .advantages__title {
+  .advantages__head {
     font-size: 24px;
     line-height: 32px;
     letter-spacing: 0.363636px;
+    width: 231px;
+    margin: 0 auto;
   }
   .advantages__wrapper {
     flex-direction: column;
   }
   .advantages__img {
-    left: 0;
-    padding-top: 20px;
+    left: -135px;
+    top: -206px;
   }
   .advantages__list {
-    margin: 260px 160px 0 0;
+    margin: 240px 160px 0 0;
     justify-content: center;
     align-items: center;
   }
   .advantages__item {
     width: 334px;
-    padding-left: 20px;
-    margin: 10px 0;
+    margin: 0 20px 20px;
   }
   .advantages__title {
     font-size: 18px;
@@ -1748,6 +1756,14 @@ body {
     font-size: 14px;
     line-height: 19px;
     letter-spacing: 0.545455px;
+  }
+  .advantages__leftSide {
+    background: none;
+    width: 0;
+    height: 0;
+  }
+  .advantages__rightSide {
+    margin-top: 0;
   }
 
   .news {
@@ -1793,7 +1809,7 @@ body {
     margin-bottom: 10px;
   }
   .benefits__facts .facts__item {
-    margin: 20px 0;
+    margin: 30px 0;
   }
   .benefits__rightSide {
     width: 350px;
@@ -1819,7 +1835,7 @@ body {
   }
   .benefits__rightSide .divorseTool__btn {
     width: 311px;
-    margin-top: 15px;
+    margin: 15px 0 20px 0;
   }
   .benefits__rightSide .divorseTool__btnIcon {
     background: none;

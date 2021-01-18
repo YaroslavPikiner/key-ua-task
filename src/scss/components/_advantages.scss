@@ -1,12 +1,21 @@
 .advantages {
-  margin-bottom: 40px;
-
-  &__wrapper { 
+  &__wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     position: relative;
+    margin-bottom: 100px;
+  }
+
+  &__leftSide {
+    position: relative;
+    background-image: url("../src/img/bg_advantages.png");
+    background-size: cover;
+    width: 588px;
+    height: 518px;
+    top: 80px;
+    right: -135px;
   }
 
   &__head {
@@ -19,9 +28,9 @@
   }
 
   &__img {
-    position: absolute;
-    left: 6%;
-    top: -17%;
+    position: relative;
+    left: -8%;
+    top: -24%;
   }
 
   &__list {
@@ -42,7 +51,6 @@
     font-weight: 700;
     line-height: 32px;
     letter-spacing: 0.545455px;
-    margin-bottom: 15px;
     color: $darkOrange;
   }
 

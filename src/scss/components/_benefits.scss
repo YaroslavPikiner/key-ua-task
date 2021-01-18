@@ -91,7 +91,7 @@
       line-height: 32px;
       text-align: center;
       letter-spacing: 0.545455px;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
 
     .divorseTool__text {
@@ -106,7 +106,7 @@
       font-size: 16px;
       line-height: 21px;
       letter-spacing: 0.545455px;
-      margin: 25px 0 5px 0;
+      margin: 30px 0 5px 0;
       padding-left: 45px;
     }
 
@@ -134,6 +134,7 @@
       outline: none;
       position: relative;
       transition: all 0.2s;
+      margin-top: 30px;
       &:hover {
         transform: scale(0.9);
       }
@@ -153,15 +154,16 @@
   &__company {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
-    position: relative;
-    bottom: -140px;
+    position: absolute;
+    bottom: -60px;
+    margin-left: 40px;
   }
 
   &__item {
     background-size: cover;
-    margin: 0 13px;
+    margin: 0 20px;
+
   }
 
   &__item--trust {
