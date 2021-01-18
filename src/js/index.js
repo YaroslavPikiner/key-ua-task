@@ -2,15 +2,13 @@ import "../scss/main.scss";
 
 const mySwiper = new Swiper(".swiper-container", {
   // Optional parameters
-
   direction: "horizontal",
   loop: true,
-  slidesPerView: 2,
-  spaceBetween: 40,
+  spaceBetween: 20,
 
   breakpoints: {
     // when window width is >= 375px
-    374: {
+    375: {
       slidesPerView: 1,
       spaceBetween: 20,
       pagination: {
@@ -20,7 +18,6 @@ const mySwiper = new Swiper(".swiper-container", {
     },
     1024: {
       slidesPerView: 2,
-      spaceBetween: 40,
     },
     1440: {
       slidesPerView: 2,

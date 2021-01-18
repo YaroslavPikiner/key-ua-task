@@ -1,5 +1,3 @@
-
-
 .reviews {
   display: flex;
   flex-direction: column;
@@ -23,7 +21,6 @@
     width: 498px;
     height: 255px;
     background-color: $lightGray;
-    mix-blend-mode: normal;
     border-radius: 7px;
     padding: 25px 35px;
     .info__user {
@@ -148,6 +145,4 @@
   .user__rating > span.active {
     color: $star;
   }
-
-
 }

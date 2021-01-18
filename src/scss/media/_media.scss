@@ -196,7 +196,7 @@
 
       .price {
         margin: 8px 20px 0 50px;
-        font-size: 10px;
+        font-size: 18px;
         line-height: 0;
         letter-spacing: 3px;
       }
@@ -317,7 +317,7 @@
 
     &__item {
       width: 334px;
-      margin: 0  20px 20px;
+      margin: 0 20px 20px;
     }
 
     &__title {
@@ -504,11 +504,13 @@
     }
 
     &__item {
-      width: 340px;
+      width: 100%;
       height: 284px;
+      padding: 0 40px;
     }
 
     .info__user {
+      margin-top: 15px;
       .user__name {
         width: auto;
         font-size: 15px;
@@ -519,7 +521,7 @@
 
     .user__date {
       margin-left: 0;
-      bottom: 25%;
+      bottom: 14%;
       right: 75%;
       font-size: 14px;
       line-height: 19px;
@@ -551,9 +553,12 @@
       display: none;
     }
 
-    .swiper-container {
-      width: 343px;
+    .swiper-slide {
+      width: 343px !important;
       height: 284px;
+    }
+
+    .swiper-container {
     }
 
     .swiper-pagination {
@@ -603,6 +608,10 @@
         font-size: 14px;
         line-height: 19px;
       }
+    }
+
+    &__underline {
+      display: none;
     }
 
     .links__lists {
