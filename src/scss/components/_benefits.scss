@@ -1,0 +1,193 @@
+.benefits {
+  margin-bottom: 120px;
+  &__title {
+    font-weight: 700;
+    font-size: var(--text-head-size);
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 0.545455px;
+    color: $darkGray;
+    margin-bottom: 46px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  &__leftSide {
+    width: 570px;
+    margin-right: 50px;
+    background: url('../src/img/rawpixel-592442-unsplash.png');
+  }
+
+  &__facts {
+    .facts__title {
+      font-weight: 700;
+      font-size: var(--text-subhead-size);
+      line-height: 32px;
+      letter-spacing: 0.545455px;
+      color: $darkOrange;
+    }
+    .facts__subtitle {
+      width: 340px;
+      font-size: var(--text-base-size);
+      line-height: 21px;
+      letter-spacing: 0.55px;
+      color: $black;
+      margin-bottom: 10px;
+    }
+    .facts__text {
+      color: $darkGray;
+      font-size: var(--text-base-size);
+      line-height: 21px;
+      letter-spacing: 0.545455px;
+      margin-bottom: 18px;
+    }
+
+    .facts__item {
+      position: relative;
+      font-size: 15px;
+      color: #000;
+      margin: 25px 0 35px 0;
+      padding-left: 45px;
+    }
+
+    .facts__icon::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: 0;
+      top: 0;
+      background: url("../src/img/danger.svg") center 0 no-repeat;
+    }
+  }
+
+  &__rightSide {
+    background: $orange;
+    box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.238338);
+    border-radius: 5px;
+    width: 470px;
+    color: $white;
+    position: relative;
+
+    .divorseTool {
+      display: flex;
+      flex-direction: column;
+      justify-self: center;
+      align-items: center;
+      padding: 0 26px 0 10px;
+    }
+
+    .divorseTool__image {
+      padding: 24px 0 15px 0;
+    }
+
+    .divorseTool__title {
+      font-weight: 700;
+      width: 320px;
+      font-size: var(--text-subhead-size);
+      line-height: 32px;
+      text-align: center;
+      letter-spacing: 0.545455px;
+      margin-bottom: 15px;
+    }
+
+    .divorseTool__text {
+      font-size: var(--text-base-size);
+      line-height: 21px;
+      letter-spacing: 0.484848px;
+    }
+
+    .divorseTool__item {
+      position: relative;
+      font-size: var(--text-base-size);
+      font-size: 16px;
+      line-height: 21px;
+      letter-spacing: 0.545455px;
+      margin: 30px 0 5px 0;
+      padding-left: 45px;
+    }
+
+    .divorseTool__icon::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: 0;
+      top: 0;
+      background: url("../src/img/check-circle.svg") center 0 no-repeat;
+    }
+
+    .divorseTool__btn {
+      background: $buttonColor;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+      width: 427px;
+      height: 50px;
+      font-size: var(--text-biggest-size);
+      line-height: 24px;
+      letter-spacing: 0.872727px;
+      color: $white;
+      border: none;
+      outline: none;
+      position: relative;
+      transition: all 0.2s;
+      margin-top: 30px;
+      &:hover {
+        transform: scale(0.9);
+      }
+    }
+
+    .divorseTool__btnIcon {
+      position: absolute;
+      width: 20px;
+      height: 8px;
+      background: url("../src/img/sort-1_copy.svg") no-repeat;
+      background-size: cover;
+      right: 10px;
+      top: 45%;
+    }
+  }
+
+  &__company {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    bottom: -60px;
+    margin-left: 40px;
+  }
+
+  &__item {
+    background-size: cover;
+    margin: 0 20px;
+
+  }
+
+  &__item--trust {
+    background: url("../src/img/truste-logo.svg") no-repeat center;
+    width: 42px;
+    height: 27px;
+  }
+
+  &__item--norton {
+    background: url("../src/img/norton.svg") no-repeat center;
+    width: 64px;
+    height: 26px;
+  }
+
+  &__item--mcafee {
+    background: url("../src/img/mcafee.svg") no-repeat center;
+    width: 65px;
+    height: 19px;
+  }
+
+  &__item--godaddy {
+    background: url("../src/img/godaddy_logo.svg") no-repeat center;
+    width: 85px;
+    height: 20px;
+  }
+}

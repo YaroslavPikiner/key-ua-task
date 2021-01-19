@@ -1,0 +1,13 @@
+* {
+  text-decoration: none;
+}
+
+:root {
+  --swiper-theme-color: #ff6d00 !important;
+}
+
+body {
+  width: 1440px;
+  margin: 0 auto;
+  font-family: var(--font-primary), var(--font-secondary);
+}

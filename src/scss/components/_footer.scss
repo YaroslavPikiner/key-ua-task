@@ -1,0 +1,89 @@
+.footer {
+  background-color: $footerBg;
+  display: flex;
+  flex-direction: column;
+  
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  &__navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__item > a {
+    color: $white;
+    &:hover {
+      color: $black;
+    }
+  }
+
+  &__item {
+    font-size: var(--text-small-size);
+    border-radius: nullpx;
+    margin: 30px 0 30px 20px;
+    padding: 10px 15px;
+    line-height: 13px;
+    letter-spacing: 0.727273px;
+    transition: all 0.2s;
+    color: $darkGray;
+    &:hover {
+      background: $red;
+      border-radius: 5px;
+      color: $white;
+    }
+  }
+
+  &__wrapper {
+    margin-left: 110px;
+    color: $white;
+  }
+
+  &__adress {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+    .adress__street {
+      width: 500px;
+      margin-right: 5%;
+    }
+  }
+
+  &__underline {
+    width: 1230px;
+    border: 0.5px solid $white;
+    margin-bottom: 12px;
+  }
+
+  &__terms {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  
+  }
+
+  &__rule {
+    width: 1230px;
+    margin-bottom: 10px;
+  }
+  &__rule:nth-child(3) {
+    margin-bottom: 30px;
+  }
+
+  .links__lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-bottom: 20px;
+  }
+
+  .links__item{
+    font-size: 12px;
+    line-height: 144%;
+    margin-right: 45px;
+  }
+}

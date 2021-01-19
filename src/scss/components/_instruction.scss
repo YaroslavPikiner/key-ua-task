@@ -1,0 +1,88 @@
+.instruction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 132px;
+  &__title {
+    font-size: var(--text-head-size);
+    color: $colorHeading;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.545455px;
+    margin-bottom: 55px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+  }
+  &__item {
+    width: 110px;
+    height: 137px;
+    margin: 0 60px 0 90px;
+  }
+
+  &__bg--ligthGray {
+    @include border($lightGray, 78px, 78px);
+  }
+
+  &__bg--gray {
+    @include border($gray, 78px, 78px);
+  }
+
+  &__bg--yellow {
+    @include border($yellow, 78px, 78px);
+  }
+
+  &__bg--orange {
+    @include border($orange, 78px, 78px);
+  }
+
+  &__icon {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+  }
+
+  &__icon--profile {
+    @include icon("../src/img/Fill-49.svg");
+  }
+
+  &__icon--document {
+    @include icon("../src/img/Fill-7.svg");
+  }
+
+  &__icon--search {
+    @include icon("../src/img/Fill-6.svg");
+  }
+
+  &__icon--finish {
+    @include icon("../src/img/Fill-11.svg");
+  }
+
+  &__text {
+    margin-top: 10px;
+    text-align: center;
+    font-size: var(--text-base-size);
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 0.727273px;
+    color: $darklyGray;
+  }
+
+  &__arrow {
+    margin: 90px 0 70px 0;
+  }
+
+  &__arrow--orange {
+    @include arrowStyleRight("../src/img/Combined_Shape_3.svg", -30%, 25%);
+  }
+  &__arrow--yellow {
+    @include arrowStyleRight("../src/img/Combined_Shape_2.svg", -30%, 50%);
+  }
+  &__arrow--gray {
+    @include arrowStyleRight("../src/img/Combined_Shape.svg", -30%, 75%);
+  }
+}

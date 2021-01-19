@@ -1,0 +1,148 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &__title {
+    font-weight: 700;
+    font-size: var(--text-head-size);
+    line-height: 48px;
+    letter-spacing: 0.545455px;
+    color: $darkGray;
+    margin-bottom: 35px;
+  }
+  &__container {
+    position: relative;
+    margin-bottom: 35px;
+  }
+  &__item {
+    width: 498px;
+    height: 255px;
+    background-color: $lightGray;
+    border-radius: 7px;
+    padding: 25px 35px;
+    .info__user {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__more {
+    font-weight: 700;
+    font-size: var(--text-base-size);
+    line-height: 21px;
+    letter-spacing: 0.545455px;
+    color: $darkOrange;
+    margin-bottom: 53px;
+  }
+
+  .swiper-container {
+    width: 1066px;
+    height: 255px;
+  }
+
+  .swiper-pagination {
+    display: none;
+  }
+
+  .slider__btn {
+    position: absolute;
+    width: 20px;
+    height: 25px;
+    border: none;
+    outline: none;
+    transition: all 0.2s;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .slider__btn--prev {
+    background: url("../src/img/chevron-right.svg") no-repeat center;
+    background-size: cover;
+    transform: rotate(180deg);
+    left: 150px;
+    top: 45%;
+  }
+
+  .slider__btn--next {
+    background: url("../src/img/chevron-right.svg") no-repeat center;
+    background-size: cover;
+    right: 150px;
+    top: 45%;
+  }
+
+  .user__photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+
+  .user__name {
+    font-weight: 700;
+    font-size: var(--text-biggest-size);
+    line-height: 24px;
+    color: $darkGray;
+    letter-spacing: 0.623377px;
+  }
+
+  .user__date {
+    position: absolute;
+    right: 60px;
+  }
+
+  .user__text {
+    width: 440px;
+    font-weight: normal;
+    font-size: var(--text-base-size);
+    line-height: 19px;
+    letter-spacing: 0.623377px;
+    margin-bottom: 8px;
+  }
+
+  .user__verified {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 13px;
+    position: relative;
+    color: $star;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 20px;
+  }
+
+  .icon__verify {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: url("../src/img/vefiried.svg") no-repeat;
+    right: 60px;
+  }
+
+  .user__rating {
+    width: 265px;
+    margin: -30px 0 25px 70px;
+  }
+
+  .user__rating span {
+    font-size: 25px;
+    line-height: 1;
+    color: lightgrey;
+  }
+
+  .user__rating > span:before {
+    content: "★";
+  }
+
+  .user__rating > span.active {
+    color: $star;
+  }
+}

@@ -1,0 +1,19 @@
+@import './resources/reset';
+@import './resources/normalize';
+@import './resources/color_matrix';
+@import './resources/mixins';
+@import './resources/vars';
+@import './resources/styles';
+@import './resources/typography';
+
+@import './components/header';
+@import './components/footer';
+@import './components/advantages';
+@import './components/benefits';
+@import './components/commitment';
+@import './components/news';
+@import './components/rewiews';
+@import './components/offer';
+@import './components/instruction';
+
+@import './media/media';

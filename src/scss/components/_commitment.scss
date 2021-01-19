@@ -1,0 +1,100 @@
+.commitment {
+  background-color: $lightWhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+
+  &__title {
+    font-size: var(--text-head-size);
+    line-height: 48px;
+    letter-spacing: 0.545455px;
+    font-weight: 700;
+    color: $darkOrange;
+    margin: 50px 0 10px 0;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.484848px;
+    color: $darkGray;
+    width: 821px;
+    margin-bottom: 37px;
+  }
+  &__list {
+    margin: 0 170px 0 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  &__item {
+    width: 320px;
+    display: flex;
+    flex-direction: row;
+    .item__title {
+      width: 165px;
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: var(--text-base-size);
+      line-height: 21px;
+      letter-spacing: 0.484848px;
+      color: $ligthBlack;
+    }
+    .item__text {
+      width: 218px;
+      margin-bottom: 50px;
+    }
+    .item__textArea {
+      margin-left: 10px;
+    }
+  }
+  &__bg--ligthGray {
+    @include border($lightGray,60px,60px);
+  }
+
+  &__bg--gray {
+    @include border($gray,60px,60px);
+  }
+
+  &__bg--yellow {
+    @include border($yellow,60px,60px);
+  }
+
+  &__bg--orange {
+    @include border($orange,60px,60px);
+  }
+
+  &__icon {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+  }
+
+  &__icon--document {
+    @include icon("../src/img/Document_1.svg");
+  }
+
+  &__icon--referee {
+    @include icon("../src/img/Referee_2.svg");
+  }
+
+  &__icon--building {
+    @include icon("../src/img/Building_3.svg");
+  }
+
+  &__icon--court {
+    @include icon("../src/img/Court_4.svg");
+  }
+
+  &__icon--libra {
+    @include icon("../src/img/Libra_5.svg");
+  }
+
+  &__icon--book {
+    @include icon("../src/img/Book_6.svg");
+  }
+}

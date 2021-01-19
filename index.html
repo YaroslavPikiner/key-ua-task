@@ -1,11 +1,609 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='dist/style.css'>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <title>Document</title>
 </head>
+
 <body>
-  
+  <header class="header">
+    <section class="header__menu">
+      <button class="header__burger--btn">
+        <span class="header__burger--icon"></span>
+      </button>
+      <picture class='header__logo'>
+        <source media="(max-width:768px)" srcset="./src/img/Group_logo_mob.svg">
+        <img src="./src/img/Group 52.svg" style="width:auto;" alt="Woman">
+      </picture>
+      <button class="header__btn">Get started</button>
+      <nav class="header__nav header__navigation">
+        <h5 class="header__item"><a href="#">Cómo funciona</a></h5>
+        <h5 class="header__item"><a href="#">¿Por Qué Nosotros?</a></h5>
+        <h5 class="header__item"><a href="#">Comentarios</a></h5>
+        <h5 class="header__item"><a href="#">FAQ</a></h5>
+        <h5 class="header__item"><a href="#">Contáctenos</a></h5>
+        <h5 class="header__item"><a href="#">Emprezar</a></h5>
+        <h5 class="header__item"><a href="#">Iniciar Sesión</a></h5>
+      </nav>
+   
+    </section>
+  </header><!-- .header-->
+  <main class="content">
+    <section class="offer">
+      <h1 class="offer__title">Comience Su Divorcio Online Sin Honorarios de Abogados</h1>
+
+      <picture class='offer__img'>
+        <source media="(max-width:768px)" srcset="./src/img/maria-ballesteros-531264-unsplash.png">
+        <img src="./src/img/divorse_bg.png" style="width:auto;" alt="Woman">
+      </picture>
+
+      <ul class="offer__features">
+        <li class="offer__item"><span class="offer__icon"></span>
+          <h5 class="offer__text">
+            Comience su divorcio en línea
+            Sin honorarios de abogado
+          </h5>
+        </li>
+        <li class="offer__item"><span class="offer__icon"></span>
+          <h5 class="offer__text">
+            Nuestro sistema fue pionero en la industria del divorcio en línea
+          </h5>
+        </li>
+        <li class="offer__item"><span class="offer__icon"></span>
+          <h5 class="offer__text">
+            Durante 19 años, más de 500,000
+            personas han usado nuestras herramientas
+          </h5>
+        </li>
+        <li class="offer__item"><span class="offer__icon"></span>
+          <h5 class="offer__text">
+            Ofrecemos el mejor precio del mercado.
+          </h5>
+        </li>
+      </ul>
+      <div class="offer__input">
+        <div class="offer__warranty">
+          <div class="offer__warranty--header">
+            <h4>Vea si califica</h4>
+          </div>
+          <div class="offer__priceBlock">
+            <div class="offer__warranty--price">
+              <h2 class="warranty">100%|</h2>
+              <div class="offer__warranty--text">
+                <p>DE GARANTÍA DE APROBACIÓN EN </p>
+                <p>EL TRIBUNAL o le devolvemos su dinero</p>
+              </div>
+            </div>
+            <div class="offer__price">
+              <span class="price">139$</span>
+              <span class="text">best price</span>
+            </div>
+          </div>
+        </div>
+        <div class="offer__data">
+          <form class="offer__form">
+            <div class="data__checkbox">
+              <div class="checkbox__item">
+                <p>¿Sabe la ubicación de su cónyuge?</p>
+                <input class="radio" type="radio" id="radio1" name="subscribe" value="newsletter">
+                <label class="data__checkbox--item" for="radio1">Si</label>
+                <input class="radio" type="radio" id="radio2" name="subscribe" value="newsletter">
+                <label class="data__checkbox--item" for="radio2">No</label>
+              </div>
+              <div class="checkbox__item">
+                <p>Can you and your spouse agree to the division of property, debts and all child related issues?</p>
+                <input class="radio" type="radio" id="radio3" name="subscribe" value="newsletter">
+                <label class="data__checkbox--item" for="radio3">Si</label>
+                <input class="radio" type="radio" id="radio4" name="subscribe" value="newsletter">
+                <label class="data__checkbox--item" for="radio4">No</label>
+              </div>
+            </div>
+            <div class="data__input">
+              <input class="data__input--item data__input--sort" type="number" placeholder="Nombre">
+              <input class="data__input--item" type="text" placeholder="Apellido">
+              <input class="data__input--item" type="email" placeholder="Ingrese su email">
+              <input class="data__input--item data__input--sort" type="number" placeholder="Seleccione su estado ">
+              <div class="data__btn">
+                <button type='submit' class="data__input--btn">Verificar elegibilidad
+                  <span class="data__input--icon"></span>
+                </button>
+                <span class="data__input--description">By clicking "Continue" you agree to the Terms & Conditions
+                </span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="instruction">
+      <h3 class="instruction__title">Solo cuatro pasos</h3>
+      <div class="instruction__list">
+
+        <section class="instruction__item">
+          <div class="instruction__bg--ligthGray">
+            <span class="instruction__icon instruction__icon--profile"></span>
+          </div>
+          <h4 class="instruction__text">Compruebe Si Califica</h4>
+        </section>
+
+        <span class=" instruction__arrow instruction__arrow--gray"></span>
+
+        <section class="instruction__item">
+          <div class="instruction__bg--gray">
+            <span class="instruction__icon instruction__icon--document"></span>
+          </div>
+          <h4 class="instruction__text">Responda Preguntas Detalladas</h4>
+        </section>
+
+        <span class=" instruction__arrow instruction__arrow--yellow"></span>
+
+        <section class="instruction__item">
+          <div class="instruction__bg--yellow">
+            <span class="instruction__icon instruction__icon--search"></span>
+          </div>
+          <h4 class="instruction__text">Revise Formularios Completados</h4>
+        </section>
+
+        <span class="instruction__arrow instruction__arrow--orange"></span>
+
+        <section class="instruction__item">
+          <div class="instruction__bg--orange">
+            <span class="instruction__icon instruction__icon--finish"></span>
+          </div>
+          <h4 class="instruction__text">Llene los Documentos</h4>
+        </section>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <h3 class="advantages__head">Obtenga un divorcio en línea fácil</h3>
+      <div class="advantages__wrapper">
+        <div class="advantages__leftSide">
+          <picture class="advantages__img--small">
+            <source media="(max-width:768px)"  srcset="./src/img/Group_small.png">
+            <img class='advantages__img' src="/src/img/Rectangle 5 Copy 2.1 (1).png" style="width:auto;" alt="Woman">
+          </picture>
+        </div>
+        <div class="advantages__rightSide">
+          <ul class="advantages__list">
+            <li class="advantages__item">
+              <h3 class="advantages__title">Barato y conveniente</h3>
+              <p class="advantages__text">Nuestro proceso simple y económico le permitirá completar sus documentos de
+                divorcio desde la comodidad de su hogar, sin incurrir en el costo de un abogado o lidiar con una larga
+                finalización</p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">Profesional y con experiencia</h3>
+              <p class="advantages__text">Somos uno de los principales proveedores de divorcios en línea en los Estados
+                Unidos y Canadá. Hacemos que el divorcio sea fácil porque nuestro proceso garantiza que sus documentos
+                esten hechos correctamente. No hay necesidad de buscar formularios o leer instrucciones largas y
+                confusas
+              </p>
+            </li>
+            <li class="advantages__item">
+              <h3 class="advantages__title">100% aprobado por el tribunal</h3>
+              <p class="advantages__text">Sin espera. Nuestro servicio de preparación de divorcios con todo incluido
+                está
+                garantizado para proporcionarle formularios aceptados por el tribunal actualizados y completos</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="news">
+      <h3 class="news__title">Divorcio en línea en las noticias</h3>
+      <ul class="news__list">
+        <li class="news__item"><span class="news__item--nbc"></span></li>
+        <li class="news__item"><span class="news__item--gma"></span></li>
+        <li class="news__item"><span class="news__item--abc"></span></li>
+        <li class="news__item"><span class="news__item--cbs"></span></li>
+        <li class="news__item"><span class="news__item--time"></span></li>
+        <li class="news__item"><span class="news__item--usa"></span></li>
+      </ul>
+    </section>
+    <section class="benefits">
+      <h2 class="benefits__title">¿Porque nosotros? Revise la diferencia de OnlineDivorce.com</h2>
+      <div class="benefits__wrapper">
+        <div class="benefits__leftSide">
+          <div class="benefits__facts">
+            <h3 class="facts__title">
+              Divorcio disputado
+            </h3>
+            <p class="facts__subtitle">Los precios promedio comienzan a partir
+              de $2000 dólares</p>
+            <p class="facts__text">Proceso fuera de línea e inconveniente con representación de abogado para cada
+              cónyuge.Costos de honorarios de abogados que resultan en gastos impredecibles. En general, un camino largo
+              y
+              costosoa seguir.</p>
+            <ul class="facts__list">
+              <li class="facts__item"><span class="facts__icon"></span>
+                <h5>
+                  La disponibilidad del abogado afecta el tiempo de finalización
+                </h5>
+              </li>
+              <li class="facts__item"><span class="facts__icon"></span>
+                <h5>
+                  Cada cónyuge tiene que contratar a un abogado, que duplica automáticamente los honorarios legales
+                </h5>
+              </li>
+              <li class="facts__item"><span class="facts__icon"></span>
+                <h5>
+                  Posibles batallas judiciales que se suman a los altos niveles de estrés
+                </h5>
+              </li>
+            </ul>
+          </div>
+          <div class="benefits__facts">
+            <h2 class="facts__title"> Otros servicios de divorcio en línea</h2>
+            <p class="facts__subtitle"> Los precios promedio comienzan a partir de $300 dólares</p>
+            <p class="facts__text">
+              Otros sitios web para completar los documentos de divorcio utilizan tecnologías de software defectuosas
+              para
+              completar su documentación de divorcio.
+            </p>
+            <ul class="facts__list">
+              <li class="facts__item"><span class="facts__icon"></span>
+                <h5>
+                  Preparación automatizada de documentos
+                </h5>
+              </li>
+              <li class="facts__item"><span class="facts__icon"></span>
+                <h5>
+                  El tiempo de procesamiento varía, pero puede demorar más de tres días hábiles
+                </h5>
+              </li>
+              <li class="facts__item"><span class="facts__icon"></span>
+                <h5>
+                  Atención al cliente a pedido, la calidad varía
+                </h5>
+              </li>
+              <li class="facts__item"><span class="facts__icon"></span>
+                <h5>
+                  Una tarifa fija reclamada, sin embargo, muchos sitios tienen tarifas ocultas
+                </h5>
+              </li>
+              <li class="facts__item"><span class="facts__icon"></span>
+                <h5>
+                  Sin experiencia: muchos sitios comenzaron a funcionar hace solo unos años
+                </h5>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="benefits__rightSide">
+          <div class="divorseTool">
+            <img class="divorseTool__image" src="./src/img/logo_white.svg" alt="">
+            <h2 class="divorseTool__title">La principal herramienta de divorcio disputado</h2>
+            <p class="divorseTool__text">Proceso totalmente guiado, rápido y económico. Servicio de divorcio en línea
+              experimentado y confiable que utiliza tecnología de primer nivel
+            </p>
+            <ul class="divorseTool__list">
+              <li class="divorseTool__item"><span class="divorseTool__icon"></span>
+                <h5>
+                  Los documentos de divorcio listos para presentar pueden completarse a su propio ritmo con fácil acceso
+                  para ambos cónyuges
+                </h5>
+              </li>
+              <li class="divorseTool__item"><span class="divorseTool__icon"></span>
+                Atención al cliente galardonado Una tarifa fija (para ambos cónyuges) para acceder a todos los
+                documentos completados para la presentación
+                </h5>
+              </li>
+              <li class="divorseTool__item"><span class="divorseTool__icon"></span>
+                <h5>
+                  Revisiones gratuitas y cambio de nombre gratuito, sin tarifas ocultas
+                </h5>
+              </li>
+              <li class="divorseTool__item"><span class="divorseTool__icon"></span>
+                <h5>
+                  Instrucciones detalladas de presentación específicas del estado
+                </h5>
+              </li>
+              <li class="divorseTool__item"><span class="divorseTool__icon"></span>
+                <h5>
+                  Revise todo y realice cambios desde la comodidad de su hogar
+                </h5>
+              </li>
+            </ul>
+            <button type='submit' class="divorseTool__btn">Start now for just 139$
+              <span class="divorseTool__btnIcon"></span>
+            </button>
+          </div>
+          <div class="benefits__company">
+            <span class="benefits__item benefits__item--trust"></span>
+            <span class="benefits__item benefits__item--norton"></span>
+            <span class="benefits__item benefits__item--mcafee"></span>
+            <span class="benefits__item benefits__item--godaddy"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="commitment">
+      <h3 class="commitment__title">Compromiso con los clientes</h3>
+      <p class="commitment__text">Nuestras herramientas han ayudado a más de 500,000 personas a divorciarse rápidamente
+        y sin estrés mientras ahorran dinero en el proceso.</p>
+      <div class="commitment__list">
+
+        <div class="commitment__item">
+          <div class="commitment__bg--ligthGray">
+            <span class="commitment__icon commitment__icon--document"></span>
+          </div>
+          <div class="item__textArea">
+            <h5 class="item__title">Aprobación judicial garantizada</h5>
+            <p class="item__text">Si los formularios no son aprobados por el tribunal, reembolsaremos el dinero del
+              cliente</p>
+          </div>
+        </div>
+        <div class="commitment__item">
+          <div class="commitment__bg--ligthGray">
+            <span class="commitment__icon commitment__icon--referee"></span>
+          </div>
+          <div class="item__textArea">
+            <h5 class="item__title">Aprobación judicial garantizada</h5>
+            <p class="item__text">Si los formularios no son aprobados por el tribunal, reembolsaremos el dinero del
+              cliente</p>
+          </div>
+        </div>
+        <div class="commitment__item">
+          <div class="commitment__bg--yellow">
+            <span class="commitment__icon commitment__icon--building"></span>
+          </div>
+          <div class="item__textArea">
+            <h5 class="item__title">Aprobación judicial garantizada</h5>
+            <p class="item__text">Si los formularios no son aprobados por el tribunal, reembolsaremos el dinero del
+              cliente</p>
+          </div>
+        </div>
+        <div class="commitment__item">
+          <div class="commitment__bg--ligthGray">
+            <span class="commitment__icon commitment__icon--court"></span>
+          </div>
+          <div class="item__textArea">
+            <h5 class="item__title">Aprobación judicial garantizada</h5>
+            <p class="item__text">Si los formularios no son aprobados por el tribunal, reembolsaremos el dinero del
+              cliente</p>
+          </div>
+        </div>
+        <div class="commitment__item">
+          <div class="commitment__bg--orange">
+            <span class="commitment__icon commitment__icon--libra"></span>
+          </div>
+          <div class="item__textArea">
+            <h5 class="item__title">Aprobación judicial garantizada</h5>
+            <p class="item__text">Si los formularios no son aprobados por el tribunal, reembolsaremos el dinero del
+              cliente</p>
+          </div>
+        </div>
+        <div class="commitment__item">
+          <div class="commitment__bg--ligthGray">
+            <span class="commitment__icon commitment__icon--book"></span>
+          </div>
+          <div class="item__textArea">
+            <h5 class="item__title">Aprobación judicial garantizada</h5>
+            <p class="item__text">Si los formularios no son aprobados por el tribunal, reembolsaremos el dinero del
+              cliente</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <h3 class="reviews__title">Opiniones de OnlineDivorce</h3>
+      <div class="reviews__container swiper-container">
+        <div class="reviews__list swiper-wrapper">
+          <div class="reviews__item swiper-slide">
+            <div class="item__info">
+              <div class="info__user">
+                <img class="user__photo" src="" alt="user__photo">
+                <h4 class="user__name">Kilpatrick B., Ontario</h4>
+                <div class="user__ration">
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                  <span class="active"></span>
+                </div>
+                <p class="user__date">Aug 2018</p>
+              </div>
+              <h5 class="item__text">
+                OD proporciona una guía clara, incluso para mi inusual y bastante especifico caso, resultó ser muy
+                útil. Pensarías que no puedes esperar recibir soporte online profesional. Pero OD sorprende. Todos los
+                formularios estuvieron preparados a tiempo. ¡Lo recomiendo!
+              </h5>
+            </div>
+          </div>
+          <div class="reviews__item swiper-slide">
+            <div class="item__info">
+              <div class="info__user">
+                <img class="user__photo" src="./src/img/Ellipse 1.png" alt="">
+                <h4 class="user__name">Kilpatrick B., Ontariasdo</h4>
+                <p class="user__date">Aug 2018</p>
+              </div>
+              <div class="user__rating">
+                <span class="active"></span>
+                <span class="active"></span>
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+              </div>
+              <h5 class="user__text">
+                OD proporciona una guía clara, incluso para mi inusual y bastante especifico caso, resultó ser muy
+                útil. Pensarías que no puedes esperar recibir soporte online profesional. Pero OD sorprende. Todos los
+                formularios estuvieron preparados a tiempo. ¡Lo recomiendo!
+              </h5>
+              <span class="user__verified"><span class="icon__verify"></span> Verified Buyer</span>
+            </div>
+          </div>
+          <div class="reviews__item swiper-slide">
+            <div class="item__info">
+              <div class="info__user">
+                <img class="user__photo" src="./src/img/Ellipse 1.png" alt="">
+                <h4 class="user__name">Kilpatrick B., Ontariasdo</h4>
+                <p class="user__date">Aug 2018</p>
+              </div>
+              <div class="user__rating">
+                <span class="active"></span>
+                <span class="active"></span>
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+              </div>
+              <h5 class="user__text">
+                OD proporciona una guía clara, incluso para mi inusual y bastante especifico caso, resultó ser muy
+                útil. Pensarías que no puedes esperar recibir soporte online profesional. Pero OD sorprende. Todos los
+                formularios estuvieron preparados a tiempo. ¡Lo recomiendo!
+              </h5>
+              <span class="user__verified"><span class="icon__verify"></span> Verified Buyer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="reviews__more">Ver todas las opiniones de los clientes</a>
+      <div class="slider__nav swiper-pagination"></div>
+      <button class="slider__btn slider__btn--prev"><span class="slider__icon--prev"></span></button>
+      <button class="slider__btn slider__btn--next"><span class="slider__icon--next"></span></button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <section class="footer__menu">
+      <img src="./src/img/logo_white.svg" alt="">
+      <nav class="footer__navigation">
+        <h5 class="footer__item"> <a href="#">Cómo funciona</a>
+        </h5>
+        <h5 class="footer__item"><a href="#">¿Por Qué Nosotros?</a></h5>
+        <h5 class="footer__item"><a href="#">Comentarios</a></h5>
+        <h5 class="footer__item"><a href="#">FAQ</a></h5>
+        <h5 class="footer__item"><a href="#">Contáctenos</a></h5>
+        <h5 class="footer__item"><a href="#">EMPREZAR</a></h5>
+        <h5 class="footer__item"><a href="#">Iniciar Sesión</a></h5>
+      </nav>
+    </section>
+    <section class='footer__wrapper'>
+      <section class="footer__adress">
+        <div class="adress__street">
+          <p>Document Processing Center Address: Online Divorce Technology LLC
+            416 W San Ysidro BLVD, Ste L  PMB #630, San Ysidro CA 92173</p>
+        </div>
+        <div class="adress__number">
+          <p>1 (866) 927-1400</p>
+          <p>Mon-Fri, 9:00AM - 8:00PM EST</p>
+        </div>
+      </section>
+      <section class="footer__links">
+        <div class="links__lists">
+          <ul class="links__item">
+            <li>Divorce in Alabama</li>
+            <li> Divorce in Alaska</li>
+            <li> Divorce in Arizona</li>
+            <li> Divorce in Arkansas</li>
+            <li> Divorce in California</li>
+            <li> Divorce in Colorado</li>
+            <li> Divorce in Connecticut</li>
+            <li> Divorce in Delaware</li>
+          </ul>
+          <ul class="links__item">
+            <li>Divorce in Alabama</li>
+            <li> Divorce in Alaska</li>
+            <li> Divorce in Arizona</li>
+            <li> Divorce in Arkansas</li>
+            <li> Divorce in California</li>
+            <li> Divorce in Colorado</li>
+            <li> Divorce in Connecticut</li>
+            <li> Divorce in Delaware</li>
+          </ul>
+          <ul class="links__item">
+            <li>Divorce in Alabama</li>
+            <li> Divorce in Alaska</li>
+            <li> Divorce in Arizona</li>
+            <li> Divorce in Arkansas</li>
+            <li> Divorce in California</li>
+            <li> Divorce in Colorado</li>
+            <li> Divorce in Connecticut</li>
+            <li> Divorce in Delaware</li>
+          </ul>
+          <ul class="links__item">
+            <li>Divorce in Alabama</li>
+            <li> Divorce in Alaska</li>
+            <li> Divorce in Arizona</li>
+            <li> Divorce in Arkansas</li>
+            <li> Divorce in California</li>
+            <li> Divorce in Colorado</li>
+            <li> Divorce in Connecticut</li>
+            <li> Divorce in Delaware</li>
+          </ul>
+          <ul class="links__item">
+            <li>Divorce in Alabama</li>
+            <li> Divorce in Alaska</li>
+            <li> Divorce in Arizona</li>
+            <li> Divorce in Arkansas</li>
+            <li> Divorce in California</li>
+            <li> Divorce in Colorado</li>
+            <li> Divorce in Connecticut</li>
+            <li> Divorce in Delaware</li>
+          </ul>
+          <ul class="links__item">
+            <li>Divorce in Alabama</li>
+            <li> Divorce in Alaska</li>
+            <li> Divorce in Arizona</li>
+            <li> Divorce in Arkansas</li>
+            <li> Divorce in California</li>
+            <li> Divorce in Colorado</li>
+            <li> Divorce in Connecticut</li>
+            <li> Divorce in Delaware</li>
+          </ul>
+          <ul class="links__item">
+            <li>Divorce in Alabama</li>
+            <li> Divorce in Alaska</li>
+            <li> Divorce in Arizona</li>
+            <li> Divorce in Arkansas</li>
+            <li> Divorce in California</li>
+            <li> Divorce in Colorado</li>
+            <li> Divorce in Connecticut</li>
+            <li> Divorce in Delaware</li>
+          </ul>
+          <ul class="links__item">
+            <li>Divorce in Alabama</li>
+            <li> Divorce in Alaska</li>
+            <li> Divorce in Arizona</li>
+            <li> Divorce in Arkansas</li>
+            <li> Divorce in California</li>
+            <li> Divorce in Colorado</li>
+            <li> Divorce in Connecticut</li>
+            <li> Divorce in Delaware</li>
+          </ul>
+        </div>
+        <div class="footer__underline"></div>
+      </section>
+      <section class="footer__terms">
+        <p class="footer__rule">Mapa del sitio</p>
+        <p class="footer__rule">© 2000-2019 Online Divorcio, Todos los derechos reservados</p>
+        <p class="footer__rule">Aviso legal: Divorcio en línea no es un bufete de abogados y su sservicios de la página
+          web
+          y los formularios no sustituyen el asesoramiento de un abogado. Divorcio en línea proporciona acceso a
+          servicios
+          de autoayuda asistidos por computadora en su dirección específica. La página web del Divorcio en línea y las
+          instrucciones escritas brindan información general sobre el proceso de divorcio solamente; No podemos darle
+          ningún consejo específico, opiniones o recomendaciones sobre su selección o relleno de formularios o sus
+          derechos, recursos u opciones legales particulares. OnlineDivorce.com es un sitio web que proporciona acceso a
+          cuestionarios en línea autoguiados. El Divorcio en línea no vende formularios en blanco, y un usuario puede
+          descargarlos en el sitio web de un tribunal. Las comunicaciones entre Usted y Divorcio en línea se rigen por
+          nuestra Política de privacidad, pero no están cubiertas por los privilegios de abogado-cliente o producto de
+          trabajo. Su acceso al sitio web de Divorcio en línea está sujeto y regido por nuestros Términos de uso.
+          Cualquier compra de Divorcio en línea está sujeta y regida por nuestros Términos y condiciones.</p>
+      </section>
+    </section>
+  </footer>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="dist/bundle.js"></script>
 </body>
+
 </html>

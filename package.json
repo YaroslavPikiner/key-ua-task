@@ -1,0 +1,41 @@
+{
+  "name": "keyua_task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch src/scss/ -o  src/css",
+    "build": "webpack",
+    "start": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YaroslavPikiner/key-ua-task.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YaroslavPikiner/key-ua-task/issues"
+  },
+  "homepage": "https://github.com/YaroslavPikiner/key-ua-task#readme",
+  "dependencies": {
+    "@splidejs/splide": "^2.4.21",
+    "node-sass": "^5.0.0",
+    "swiper": "^6.4.5"
+  },
+  "devDependencies": {
+    "css-loader": "^5.0.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.5.1",
+    "mini-css-extract-plugin": "^1.3.4",
+    "resolve-url-loader": "^3.1.2",
+    "sass-loader": "^10.1.1",
+    "style-loader": "^2.0.0",
+    "svg-url-loader": "^7.1.1",
+    "webpack": "^5.15.0",
+    "webpack-cli": "^4.3.1"
+  }
+}
